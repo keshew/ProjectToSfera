@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Dogecoin Was Created in about 2 Hours</string>
+		<key>fact</key>
+		<string>Billy Markus tweeted this when a user asked him how to make the coin more efficient. He said that he made Dogecoin in 2 hours and didn’t consider anything.</string>
+		<key>image</key>
+		<string>dogecoin.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>All-Time High Price and Market Cap</string>
+		<key>fact</key>
+		<string>The highest price that Dogecoin has ever had is $0.74. The coin reached that point on May 8, 2021. It hit its all-time high market cap on that day too: $93 B.
+P.S. At the time of writing, the market cap of Dogecoin is 43B which is almost as much as Ebay’s.</string>
+		<key>image</key>
+		<string>dogecoin.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>The Dog on Dogecoins Logo Is Shiba Inu</string>
+		<key>fact</key>
+		<string>Shiba is a hunting dog breed. Interesting is that after the release of Dogecoin, different coins with dogs were launched. One of these dog-based meme coins is Corgi Token based on the popular Corgi breed of dogs. This coin is a “decentralized community-based cryptocurrency” on the Ethereum blockchain.</string>
+		<key>image</key>
+		<string>dogecoin.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>It is more than just a cryptocurrency</string>
+		<key>fact</key>
+		<string>Perceiving Ethereum as simply another cryptocurrency is ignorance. Its role surpasses that of the average Altcoin. It is an entire platform that supports decentralized applications, and it has its tokens. What’s more interesting is that it allows developers and users to issue their own digital items within the network. For clarity, Ethereum is a crypto platform and a programming tool. 
+It has a dedicated team of developers and users that give feedback to the system for improvement. Despite being fully decentralized, it has retained its developers and workers to maintain and promote the network. In a sense, Ethereum is a centralized, decentralized system. The central development team is also the largest holder in the network. What gains Ethereum the public trust is because its developers do not hide behind pseudonyms, unlike Bitcoin. </string>
+		<key>image</key>
+		<string>ethereum.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Ethereum is not bound by limits like Bitcoins</string>
+		<key>fact</key>
+		<string>Bitcoin remains the most recognized virtual coin, but the growth of Ethereum seems to be closing in on it. Bitcoin’s market cap is known to have a fixed amount of available currencies. The goal of Bitcoins is to mine 21 million coins, then no more. Ethereum does not have an actual cap. It’s only limit is that only 18 million Ether can be mined annually. Soon, it will surpass Bitcoin.</string>
+		<key>image</key>
+		<string>ethereum.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Ethereum hosts a majority of ICOs</string>
+		<key>fact</key>
+		<string>Most of the emerging tokens are launched in Ethereum for their Initial Coin Offering sales. Over three-quarters of ICO sales are hosted on the blockchain. A majority of the ICOs are built on ERC-20.</string>
+		<key>image</key>
+		<string>ethereum.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>The Mysterious Creator</string>
+		<key>fact</key>
+		<string>In 2009, a person or a group of people known as Satoshi Nakamoto introduced Bitcoin to the world. He (or they) vanished off the Internet in late 2010, and he hasn’t been heard from since. Just as his identity is shrouded in mystery, nobody really knows if he’s even alive or dead. The only communication people had with him was through emails and forums.
+
+His Bitcoin wallet holds around 980,000 bitcoins, which makes him one of the richest people on the planet.</string>
+		<key>image</key>
+		<string>bty.jpg</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>The Satoshi</string>
+		<key>fact</key>
+		<string>As a sign of respect for Bitcoin’s creator, the smallest unit of a bitcoin is known as a satoshi. One satoshi is valued at around 0.00005 U.S. dollars (as on 11th April 2019), which is a very, very low value. To make one bitcoin, you need approximately one hundred million satoshis. According to current bitcoin values, which fluctuate a lot, to make a dollar you need close to 15,800 satoshis.</string>
+		<key>image</key>
+		<string>bty.jpg</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Limited Number of Bitcoins</string>
+		<key>fact</key>
+		<string>There’s a limit to how many bitcoins can exist in the market: 21 million. As of this moment, 17 million bitcoins are already in circulation; that means almost 80 percent of the 21 million have already been mined. But don’t worry; until 2140, we will still have bitcoins to mine. This is because of how miners are rewarded. Miners are rewarded with 12.5 bitcoins for each block added to the blockchain, and every four years the reward is reduced by half. The next halving is supposed to occur in 2020 when the reward will be reduced to 6.25 bitcoins.</string>
+		<key>image</key>
+		<string>bty.jpg</string>
+	</dict>
+</array>
+</plist>

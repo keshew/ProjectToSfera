@@ -7,25 +7,112 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		863301252935E8E900A1C409 /* FeedCoinsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863301242935E8E900A1C409 /* FeedCoinsModel.swift */; };
+		864068B02937EE1E00241AF2 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864068AF2937EE1E00241AF2 /* UILabelExtension.swift */; };
+		864068C12937FBE100241AF2 /* MainTabBarControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864068C02937FBE100241AF2 /* MainTabBarControllerProtocol.swift */; };
+		864068C92937FDA600241AF2 /* MarketViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864068C82937FDA600241AF2 /* MarketViewControllerProtocol.swift */; };
+		864068CC2937FECB00241AF2 /* MarketTableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864068CB2937FECB00241AF2 /* MarketTableViewCellProtocol.swift */; };
+		864068CE2937FF9500241AF2 /* ExtensionMarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864068CD2937FF9500241AF2 /* ExtensionMarketViewController.swift */; };
+		864068D12938010500241AF2 /* MarketRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864068D02938010500241AF2 /* MarketRouterProtocol.swift */; };
+		864068D42938014E00241AF2 /* MarketPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864068D32938014E00241AF2 /* MarketPresenterProtocol.swift */; };
+		864068D72938017600241AF2 /* MarketInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864068D62938017600241AF2 /* MarketInteractorProtocol.swift */; };
 		865535B7293499D90013488B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535B6293499D90013488B /* AppDelegate.swift */; };
 		865535B9293499D90013488B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535B8293499D90013488B /* SceneDelegate.swift */; };
-		865535BB293499D90013488B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535BA293499D90013488B /* ViewController.swift */; };
-		865535BE293499D90013488B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865535BC293499D90013488B /* Main.storyboard */; };
 		865535C1293499D90013488B /* ProjectToSfera.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 865535BF293499D90013488B /* ProjectToSfera.xcdatamodeld */; };
 		865535C3293499DA0013488B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 865535C2293499DA0013488B /* Assets.xcassets */; };
 		865535C6293499DA0013488B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865535C4293499DA0013488B /* LaunchScreen.storyboard */; };
+		865535D029349A800013488B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535CF29349A800013488B /* MainTabBarController.swift */; };
+		865535D229349AE20013488B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535D129349AE20013488B /* UIColorExtension.swift */; };
+		865535DD29349C4E0013488B /* FeedModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535D829349C4E0013488B /* FeedModuleBuilder.swift */; };
+		865535DE29349C4E0013488B /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535D929349C4E0013488B /* FeedPresenter.swift */; };
+		865535DF29349C4E0013488B /* FeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535DA29349C4E0013488B /* FeedRouter.swift */; };
+		865535E029349C4E0013488B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535DB29349C4E0013488B /* FeedViewController.swift */; };
+		865535E129349C4E0013488B /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535DC29349C4E0013488B /* FeedInteractor.swift */; };
+		865535E729349C580013488B /* MarketModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535E229349C580013488B /* MarketModuleBuilder.swift */; };
+		865535E829349C580013488B /* MarketPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535E329349C580013488B /* MarketPresenter.swift */; };
+		865535E929349C580013488B /* MarketRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535E429349C580013488B /* MarketRouter.swift */; };
+		865535EA29349C580013488B /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535E529349C580013488B /* MarketViewController.swift */; };
+		865535EB29349C580013488B /* MarketInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535E629349C580013488B /* MarketInteractor.swift */; };
+		865535F129349C5F0013488B /* FactsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535EC29349C5F0013488B /* FactsModuleBuilder.swift */; };
+		865535F229349C5F0013488B /* FactsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535ED29349C5F0013488B /* FactsPresenter.swift */; };
+		865535F329349C5F0013488B /* FactsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535EE29349C5F0013488B /* FactsRouter.swift */; };
+		865535F429349C5F0013488B /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535EF29349C5F0013488B /* FactsViewController.swift */; };
+		865535F529349C5F0013488B /* FactsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535F029349C5F0013488B /* FactsInteractor.swift */; };
+		868715432938D0BB00F9BAAE /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868715422938D0BB00F9BAAE /* FeedTableViewCell.swift */; };
+		868FEF76293B478400E60C80 /* FactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868FEF75293B478400E60C80 /* FactTableViewCell.swift */; };
+		8690FF3A29355265008CE3A2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8690FF3929355265008CE3A2 /* CoreDataManager.swift */; };
+		8690FF3C29355277008CE3A2 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8690FF3B29355277008CE3A2 /* APIManager.swift */; };
+		8690FF402935584B008CE3A2 /* CoinsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8690FF3F2935584B008CE3A2 /* CoinsModel.swift */; };
+		869F1783293E570800E8EB2B /* Facts+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869F1781293E570800E8EB2B /* Facts+CoreDataClass.swift */; };
+		869F1784293E570800E8EB2B /* Facts+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869F1782293E570800E8EB2B /* Facts+CoreDataProperties.swift */; };
+		869F178B293E7BB100E8EB2B /* PropertyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 869F178A293E7BB100E8EB2B /* PropertyList.plist */; };
+		86BDCA3429361696007C96E0 /* MarketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BDCA3329361696007C96E0 /* MarketTableViewCell.swift */; };
+		86DF5722293957E3001DD1D3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 86DF5721293957E3001DD1D3 /* Kingfisher */; };
+		86F84BED293AA1CF0072D82C /* MonitoringNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F84BEC293AA1CF0072D82C /* MonitoringNetworkManager.swift */; };
+		86F84BF1293ABA520072D82C /* ExtensionFeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F84BF0293ABA520072D82C /* ExtensionFeedPresenter.swift */; };
+		86F84BF3293ABA940072D82C /* ProtocolFeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F84BF2293ABA940072D82C /* ProtocolFeedPresenter.swift */; };
+		86F84BF7293ABAD80072D82C /* ProtocolFeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F84BF6293ABAD80072D82C /* ProtocolFeedRouter.swift */; };
+		86F84BFD293ABB330072D82C /* ProtocolFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F84BFC293ABB330072D82C /* ProtocolFeedViewController.swift */; };
+		86F84BFF293ABB3F0072D82C /* ExtensionFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F84BFE293ABB3F0072D82C /* ExtensionFeedViewController.swift */; };
+		86F84C02293ABC330072D82C /* ProtocolFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F84C01293ABC330072D82C /* ProtocolFeedTableViewCell.swift */; };
+		86F84C05293ABD1A0072D82C /* ProtocolFeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F84C04293ABD1A0072D82C /* ProtocolFeedInteractor.swift */; };
+		86F84C09293ABFCB0072D82C /* ProtocolAPIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F84C08293ABFCB0072D82C /* ProtocolAPIType.swift */; };
+		86F84C0D293AC0D20072D82C /* ProtocolMonitoringNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F84C0C293AC0D20072D82C /* ProtocolMonitoringNetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		863301242935E8E900A1C409 /* FeedCoinsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoinsModel.swift; sourceTree = "<group>"; };
+		864068AF2937EE1E00241AF2 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		864068C02937FBE100241AF2 /* MainTabBarControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarControllerProtocol.swift; sourceTree = "<group>"; };
+		864068C82937FDA600241AF2 /* MarketViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewControllerProtocol.swift; sourceTree = "<group>"; };
+		864068CB2937FECB00241AF2 /* MarketTableViewCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTableViewCellProtocol.swift; sourceTree = "<group>"; };
+		864068CD2937FF9500241AF2 /* ExtensionMarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionMarketViewController.swift; sourceTree = "<group>"; };
+		864068D02938010500241AF2 /* MarketRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketRouterProtocol.swift; sourceTree = "<group>"; };
+		864068D32938014E00241AF2 /* MarketPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPresenterProtocol.swift; sourceTree = "<group>"; };
+		864068D62938017600241AF2 /* MarketInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketInteractorProtocol.swift; sourceTree = "<group>"; };
 		865535B3293499D90013488B /* ProjectToSfera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectToSfera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		865535B6293499D90013488B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		865535B8293499D90013488B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		865535BA293499D90013488B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		865535BD293499D90013488B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		865535C0293499D90013488B /* ProjectToSfera.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProjectToSfera.xcdatamodel; sourceTree = "<group>"; };
 		865535C2293499DA0013488B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		865535C5293499DA0013488B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		865535C7293499DA0013488B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		865535CF29349A800013488B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		865535D129349AE20013488B /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		865535D829349C4E0013488B /* FeedModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModuleBuilder.swift; sourceTree = "<group>"; };
+		865535D929349C4E0013488B /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
+		865535DA29349C4E0013488B /* FeedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRouter.swift; sourceTree = "<group>"; };
+		865535DB29349C4E0013488B /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		865535DC29349C4E0013488B /* FeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
+		865535E229349C580013488B /* MarketModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketModuleBuilder.swift; sourceTree = "<group>"; };
+		865535E329349C580013488B /* MarketPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPresenter.swift; sourceTree = "<group>"; };
+		865535E429349C580013488B /* MarketRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketRouter.swift; sourceTree = "<group>"; };
+		865535E529349C580013488B /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
+		865535E629349C580013488B /* MarketInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketInteractor.swift; sourceTree = "<group>"; };
+		865535EC29349C5F0013488B /* FactsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsModuleBuilder.swift; sourceTree = "<group>"; };
+		865535ED29349C5F0013488B /* FactsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsPresenter.swift; sourceTree = "<group>"; };
+		865535EE29349C5F0013488B /* FactsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsRouter.swift; sourceTree = "<group>"; };
+		865535EF29349C5F0013488B /* FactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewController.swift; sourceTree = "<group>"; };
+		865535F029349C5F0013488B /* FactsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsInteractor.swift; sourceTree = "<group>"; };
+		868715422938D0BB00F9BAAE /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		868FEF75293B478400E60C80 /* FactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactTableViewCell.swift; sourceTree = "<group>"; };
+		8690FF3929355265008CE3A2 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		8690FF3B29355277008CE3A2 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		8690FF3F2935584B008CE3A2 /* CoinsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsModel.swift; sourceTree = "<group>"; };
+		869F1781293E570800E8EB2B /* Facts+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Facts+CoreDataClass.swift"; sourceTree = "<group>"; };
+		869F1782293E570800E8EB2B /* Facts+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Facts+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		869F178A293E7BB100E8EB2B /* PropertyList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PropertyList.plist; sourceTree = "<group>"; };
+		86BDCA3329361696007C96E0 /* MarketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTableViewCell.swift; sourceTree = "<group>"; };
+		86F84BEC293AA1CF0072D82C /* MonitoringNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringNetworkManager.swift; sourceTree = "<group>"; };
+		86F84BF0293ABA520072D82C /* ExtensionFeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionFeedPresenter.swift; sourceTree = "<group>"; };
+		86F84BF2293ABA940072D82C /* ProtocolFeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolFeedPresenter.swift; sourceTree = "<group>"; };
+		86F84BF6293ABAD80072D82C /* ProtocolFeedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolFeedRouter.swift; sourceTree = "<group>"; };
+		86F84BFC293ABB330072D82C /* ProtocolFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolFeedViewController.swift; sourceTree = "<group>"; };
+		86F84BFE293ABB3F0072D82C /* ExtensionFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionFeedViewController.swift; sourceTree = "<group>"; };
+		86F84C01293ABC330072D82C /* ProtocolFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolFeedTableViewCell.swift; sourceTree = "<group>"; };
+		86F84C04293ABD1A0072D82C /* ProtocolFeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolFeedInteractor.swift; sourceTree = "<group>"; };
+		86F84C08293ABFCB0072D82C /* ProtocolAPIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolAPIType.swift; sourceTree = "<group>"; };
+		86F84C0C293AC0D20072D82C /* ProtocolMonitoringNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolMonitoringNetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,12 +120,231 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86DF5722293957E3001DD1D3 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		863301222935E8CE00A1C409 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				86F84C07293ABFC20072D82C /* Protocols */,
+				8690FF3B29355277008CE3A2 /* APIManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		863301232935E8D900A1C409 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8690FF3F2935584B008CE3A2 /* CoinsModel.swift */,
+				863301242935E8E900A1C409 /* FeedCoinsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		863301262935E8F100A1C409 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				869F1785293E573700E8EB2B /* EntityModel */,
+				8690FF3929355265008CE3A2 /* CoreDataManager.swift */,
+				865535BF293499D90013488B /* ProjectToSfera.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		864068B12937F99D00241AF2 /* ModuleBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				865535E229349C580013488B /* MarketModuleBuilder.swift */,
+			);
+			path = ModuleBuilder;
+			sourceTree = "<group>";
+		};
+		864068B22937F9AD00241AF2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				864068D52938015700241AF2 /* Protocols */,
+				865535E329349C580013488B /* MarketPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		864068B32937F9BC00241AF2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				864068D22938011400241AF2 /* Protocols */,
+				865535E429349C580013488B /* MarketRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		864068B42937F9C000241AF2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				864068CA2937FDAA00241AF2 /* Protocols */,
+				864068CF2937FF9800241AF2 /* Extensions */,
+				868715412938D09C00F9BAAE /* Controller */,
+				86BDCA3529361699007C96E0 /* Cell */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		864068B52937F9C800241AF2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				864068D82938029600241AF2 /* Protocols */,
+				865535E629349C580013488B /* MarketInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		864068B62937FA5400241AF2 /* ModuleBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				865535D829349C4E0013488B /* FeedModuleBuilder.swift */,
+			);
+			path = ModuleBuilder;
+			sourceTree = "<group>";
+		};
+		864068B72937FA6100241AF2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				86F84BEE293AB9FD0072D82C /* Protocols */,
+				86F84BEF293ABA040072D82C /* Extensions */,
+				865535D929349C4E0013488B /* FeedPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		864068B82937FA6700241AF2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				86F84BF5293ABAC70072D82C /* Protocols */,
+				865535DA29349C4E0013488B /* FeedRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		864068B92937FA6D00241AF2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				86F84BFA293ABB190072D82C /* Protocols */,
+				86F84BFB293ABB1C0072D82C /* Extensions */,
+				86626FCD293E01CC00B69C5C /* Controller */,
+				86F84BF8293ABAFD0072D82C /* Cell */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		864068BA2937FA7400241AF2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				86F84C03293ABD0D0072D82C /* Protocols */,
+				865535DC29349C4E0013488B /* FeedInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		864068BB2937FA8D00241AF2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				865535F029349C5F0013488B /* FactsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		864068BC2937FA9300241AF2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				865535EF29349C5F0013488B /* FactsViewController.swift */,
+				868FEF75293B478400E60C80 /* FactTableViewCell.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		864068BD2937FA9A00241AF2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				865535EE29349C5F0013488B /* FactsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		864068BE2937FAA300241AF2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				865535ED29349C5F0013488B /* FactsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		864068BF2937FAA800241AF2 /* ModuleBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				865535EC29349C5F0013488B /* FactsModuleBuilder.swift */,
+			);
+			name = ModuleBuilder;
+			sourceTree = "<group>";
+		};
+		864068C22937FC3300241AF2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				864068C02937FBE100241AF2 /* MainTabBarControllerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		864068C72937FCE000241AF2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				864068CB2937FECB00241AF2 /* MarketTableViewCellProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		864068CA2937FDAA00241AF2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				864068C82937FDA600241AF2 /* MarketViewControllerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		864068CF2937FF9800241AF2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				864068CD2937FF9500241AF2 /* ExtensionMarketViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		864068D22938011400241AF2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				864068D02938010500241AF2 /* MarketRouterProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		864068D52938015700241AF2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				864068D32938014E00241AF2 /* MarketPresenterProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		864068D82938029600241AF2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				864068D62938017600241AF2 /* MarketInteractorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		865535AA293499D90013488B = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +364,241 @@
 		865535B5293499D90013488B /* ProjectToSfera */ = {
 			isa = PBXGroup;
 			children = (
+				865535D329349BF80013488B /* Modules */,
+				8690FF3729355173008CE3A2 /* Extensions */,
+				865535CE29349A2C0013488B /* Resources */,
+				865535CD29349A1D0013488B /* Application */,
+				86F84C0A293ABFDE0072D82C /* Services */,
+			);
+			path = ProjectToSfera;
+			sourceTree = "<group>";
+		};
+		865535CD29349A1D0013488B /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				865535B6293499D90013488B /* AppDelegate.swift */,
 				865535B8293499D90013488B /* SceneDelegate.swift */,
-				865535BA293499D90013488B /* ViewController.swift */,
-				865535BC293499D90013488B /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		865535CE29349A2C0013488B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				865535C2293499DA0013488B /* Assets.xcassets */,
 				865535C4293499DA0013488B /* LaunchScreen.storyboard */,
 				865535C7293499DA0013488B /* Info.plist */,
-				865535BF293499D90013488B /* ProjectToSfera.xcdatamodeld */,
+				869F178A293E7BB100E8EB2B /* PropertyList.plist */,
 			);
-			path = ProjectToSfera;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		865535D329349BF80013488B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				865535D729349C2C0013488B /* FeedModule */,
+				865535D629349C2B0013488B /* MarketModule */,
+				865535D529349C280013488B /* FactsModule */,
+				865535D429349C080013488B /* TabBarController */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		865535D429349C080013488B /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				864068C22937FC3300241AF2 /* Protocols */,
+				865535CF29349A800013488B /* MainTabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		865535D529349C280013488B /* FactsModule */ = {
+			isa = PBXGroup;
+			children = (
+				864068BF2937FAA800241AF2 /* ModuleBuilder */,
+				864068BE2937FAA300241AF2 /* Presenter */,
+				864068BD2937FA9A00241AF2 /* Router */,
+				864068BC2937FA9300241AF2 /* ViewController */,
+				864068BB2937FA8D00241AF2 /* Interactor */,
+			);
+			path = FactsModule;
+			sourceTree = "<group>";
+		};
+		865535D629349C2B0013488B /* MarketModule */ = {
+			isa = PBXGroup;
+			children = (
+				864068B12937F99D00241AF2 /* ModuleBuilder */,
+				864068B42937F9C000241AF2 /* ViewController */,
+				864068B52937F9C800241AF2 /* Interactor */,
+				864068B22937F9AD00241AF2 /* Presenter */,
+				864068B32937F9BC00241AF2 /* Router */,
+			);
+			path = MarketModule;
+			sourceTree = "<group>";
+		};
+		865535D729349C2C0013488B /* FeedModule */ = {
+			isa = PBXGroup;
+			children = (
+				864068B62937FA5400241AF2 /* ModuleBuilder */,
+				864068B92937FA6D00241AF2 /* ViewController */,
+				864068BA2937FA7400241AF2 /* Interactor */,
+				864068B72937FA6100241AF2 /* Presenter */,
+				864068B82937FA6700241AF2 /* Router */,
+			);
+			path = FeedModule;
+			sourceTree = "<group>";
+		};
+		86626FCD293E01CC00B69C5C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				865535DB29349C4E0013488B /* FeedViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		868715412938D09C00F9BAAE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				865535E529349C580013488B /* MarketViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8690FF3729355173008CE3A2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				865535D129349AE20013488B /* UIColorExtension.swift */,
+				864068AF2937EE1E00241AF2 /* UILabelExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8690FF382935517D008CE3A2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				863301232935E8D900A1C409 /* Model */,
+				863301222935E8CE00A1C409 /* Manager */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		869F1785293E573700E8EB2B /* EntityModel */ = {
+			isa = PBXGroup;
+			children = (
+				869F1781293E570800E8EB2B /* Facts+CoreDataClass.swift */,
+				869F1782293E570800E8EB2B /* Facts+CoreDataProperties.swift */,
+			);
+			path = EntityModel;
+			sourceTree = "<group>";
+		};
+		86BDCA3529361699007C96E0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				864068C72937FCE000241AF2 /* Protocols */,
+				86BDCA3329361696007C96E0 /* MarketTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		86F84BEE293AB9FD0072D82C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				86F84BF2293ABA940072D82C /* ProtocolFeedPresenter.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		86F84BEF293ABA040072D82C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				86F84BF0293ABA520072D82C /* ExtensionFeedPresenter.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		86F84BF5293ABAC70072D82C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				86F84BF6293ABAD80072D82C /* ProtocolFeedRouter.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		86F84BF8293ABAFD0072D82C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				86F84C00293ABC220072D82C /* Protocols */,
+				868715422938D0BB00F9BAAE /* FeedTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		86F84BFA293ABB190072D82C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				86F84BFC293ABB330072D82C /* ProtocolFeedViewController.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		86F84BFB293ABB1C0072D82C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				86F84BFE293ABB3F0072D82C /* ExtensionFeedViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		86F84C00293ABC220072D82C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				86F84C01293ABC330072D82C /* ProtocolFeedTableViewCell.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		86F84C03293ABD0D0072D82C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				86F84C04293ABD1A0072D82C /* ProtocolFeedInteractor.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		86F84C06293ABDDE0072D82C /* MonirotingNetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				86F84C0B293AC0BB0072D82C /* Protocols */,
+				86F84BEC293AA1CF0072D82C /* MonitoringNetworkManager.swift */,
+			);
+			path = MonirotingNetworkManager;
+			sourceTree = "<group>";
+		};
+		86F84C07293ABFC20072D82C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				86F84C08293ABFCB0072D82C /* ProtocolAPIType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		86F84C0A293ABFDE0072D82C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				86F84C06293ABDDE0072D82C /* MonirotingNetworkManager */,
+				863301262935E8F100A1C409 /* CoreData */,
+				8690FF382935517D008CE3A2 /* API */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		86F84C0B293AC0BB0072D82C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				86F84C0C293AC0D20072D82C /* ProtocolMonitoringNetworkManager.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +617,9 @@
 			dependencies = (
 			);
 			name = ProjectToSfera;
+			packageProductDependencies = (
+				86DF5721293957E3001DD1D3 /* Kingfisher */,
+			);
 			productName = ProjectToSfera;
 			productReference = 865535B3293499D90013488B /* ProjectToSfera.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +648,9 @@
 				Base,
 			);
 			mainGroup = 865535AA293499D90013488B;
+			packageReferences = (
+				86DF5720293957E3001DD1D3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 865535B4293499D90013488B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,8 +666,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				865535C6293499DA0013488B /* LaunchScreen.storyboard in Resources */,
+				869F178B293E7BB100E8EB2B /* PropertyList.plist in Resources */,
 				865535C3293499DA0013488B /* Assets.xcassets in Resources */,
-				865535BE293499D90013488B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +678,59 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				865535BB293499D90013488B /* ViewController.swift in Sources */,
+				865535EB29349C580013488B /* MarketInteractor.swift in Sources */,
+				864068CC2937FECB00241AF2 /* MarketTableViewCellProtocol.swift in Sources */,
+				86F84C0D293AC0D20072D82C /* ProtocolMonitoringNetworkManager.swift in Sources */,
+				865535F529349C5F0013488B /* FactsInteractor.swift in Sources */,
 				865535B7293499D90013488B /* AppDelegate.swift in Sources */,
+				86F84BF1293ABA520072D82C /* ExtensionFeedPresenter.swift in Sources */,
+				86F84C02293ABC330072D82C /* ProtocolFeedTableViewCell.swift in Sources */,
+				865535E129349C4E0013488B /* FeedInteractor.swift in Sources */,
+				865535F429349C5F0013488B /* FactsViewController.swift in Sources */,
+				865535E029349C4E0013488B /* FeedViewController.swift in Sources */,
+				86F84BFD293ABB330072D82C /* ProtocolFeedViewController.swift in Sources */,
+				86F84BF7293ABAD80072D82C /* ProtocolFeedRouter.swift in Sources */,
+				864068C92937FDA600241AF2 /* MarketViewControllerProtocol.swift in Sources */,
+				865535E929349C580013488B /* MarketRouter.swift in Sources */,
+				86F84BFF293ABB3F0072D82C /* ExtensionFeedViewController.swift in Sources */,
+				86F84C05293ABD1A0072D82C /* ProtocolFeedInteractor.swift in Sources */,
+				868715432938D0BB00F9BAAE /* FeedTableViewCell.swift in Sources */,
+				869F1784293E570800E8EB2B /* Facts+CoreDataProperties.swift in Sources */,
+				864068B02937EE1E00241AF2 /* UILabelExtension.swift in Sources */,
+				865535F129349C5F0013488B /* FactsModuleBuilder.swift in Sources */,
+				8690FF402935584B008CE3A2 /* CoinsModel.swift in Sources */,
+				864068D12938010500241AF2 /* MarketRouterProtocol.swift in Sources */,
+				865535DE29349C4E0013488B /* FeedPresenter.swift in Sources */,
+				865535E729349C580013488B /* MarketModuleBuilder.swift in Sources */,
+				865535EA29349C580013488B /* MarketViewController.swift in Sources */,
+				865535E829349C580013488B /* MarketPresenter.swift in Sources */,
+				868FEF76293B478400E60C80 /* FactTableViewCell.swift in Sources */,
+				8690FF3A29355265008CE3A2 /* CoreDataManager.swift in Sources */,
+				865535DF29349C4E0013488B /* FeedRouter.swift in Sources */,
+				864068C12937FBE100241AF2 /* MainTabBarControllerProtocol.swift in Sources */,
+				864068CE2937FF9500241AF2 /* ExtensionMarketViewController.swift in Sources */,
+				864068D42938014E00241AF2 /* MarketPresenterProtocol.swift in Sources */,
+				869F1783293E570800E8EB2B /* Facts+CoreDataClass.swift in Sources */,
+				865535DD29349C4E0013488B /* FeedModuleBuilder.swift in Sources */,
+				865535D029349A800013488B /* MainTabBarController.swift in Sources */,
+				8690FF3C29355277008CE3A2 /* APIManager.swift in Sources */,
+				86BDCA3429361696007C96E0 /* MarketTableViewCell.swift in Sources */,
+				864068D72938017600241AF2 /* MarketInteractorProtocol.swift in Sources */,
+				86F84BED293AA1CF0072D82C /* MonitoringNetworkManager.swift in Sources */,
+				865535F229349C5F0013488B /* FactsPresenter.swift in Sources */,
 				865535C1293499D90013488B /* ProjectToSfera.xcdatamodeld in Sources */,
+				863301252935E8E900A1C409 /* FeedCoinsModel.swift in Sources */,
+				865535F329349C5F0013488B /* FactsRouter.swift in Sources */,
 				865535B9293499D90013488B /* SceneDelegate.swift in Sources */,
+				86F84BF3293ABA940072D82C /* ProtocolFeedPresenter.swift in Sources */,
+				86F84C09293ABFCB0072D82C /* ProtocolAPIType.swift in Sources */,
+				865535D229349AE20013488B /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		865535BC293499D90013488B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				865535BD293499D90013488B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		865535C4293499DA0013488B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,22 +865,25 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 59WWFG63NN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ProjectToSfera/Info.plist;
+				INFOPLIST_FILE = ProjectToSfera/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ART.ProjectToSfera;
+				PRODUCT_BUNDLE_IDENTIFIER = ART.ProjectToSfera123456;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,22 +896,25 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 59WWFG63NN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ProjectToSfera/Info.plist;
+				INFOPLIST_FILE = ProjectToSfera/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ART.ProjectToSfera;
+				PRODUCT_BUNDLE_IDENTIFIER = ART.ProjectToSfera123456;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -362,6 +940,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		86DF5720293957E3001DD1D3 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		86DF5721293957E3001DD1D3 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86DF5720293957E3001DD1D3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		865535BF293499D90013488B /* ProjectToSfera.xcdatamodeld */ = {
