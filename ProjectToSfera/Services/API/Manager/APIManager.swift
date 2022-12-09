@@ -13,7 +13,7 @@ fileprivate enum APIType {
     
     var path: String {
         switch self {
-        case .getCoin: return "coins?skip=0&limit=100&currency=EUR"
+        case .getCoin: return "coins?skip=0&limit=50&currency=EUR"
         case .getFeed: return "news?skip=0&limit=20"
         }
     }

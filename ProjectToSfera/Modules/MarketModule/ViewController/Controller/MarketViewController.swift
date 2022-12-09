@@ -17,20 +17,15 @@ class MarketViewController: UIViewController {
             tableView.reloadData()
         }
     }
-    
-    
+    deinit {
+        print("controller")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoaded()
         configureTableView()
         setupContent()
-        setupSortingItemBar()
-        
     }
-    
-    @objc func sortingActionItemBar() {
-    }
-    
     
     func getInfoAboutCoins(coin: Coin) {
         DispatchQueue.main.async {
@@ -39,7 +34,6 @@ class MarketViewController: UIViewController {
     }
     
     //MARK: - SETUP VIEW
-    
     func configureTableView() {
         tableView.delegate = self
         tableView.dataSource = self
@@ -59,17 +53,4 @@ class MarketViewController: UIViewController {
             view.bottomAnchor.constraint(equalTo: tableView.bottomAnchor)
         ])
     }
-    
-    func setupSortingItemBar() {
-        var sortingItemBar = UIBarButtonItem()
-        sortingItemBar = UIBarButtonItem(image: UIImage(systemName: "arrow.up.arrow.down"),
-                                         landscapeImagePhone: .none,
-                                         style: .done,
-                                         target: self,
-                                         action: #selector(sortingActionItemBar))
-        sortingItemBar.tintColor = .mainBlueColor
-        navigationItem.rightBarButtonItem = sortingItemBar
-    }
-    
-    
 }

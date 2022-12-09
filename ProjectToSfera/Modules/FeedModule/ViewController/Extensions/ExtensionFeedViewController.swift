@@ -23,10 +23,13 @@ extension FeedViewController: FeedViewProtocol, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         presenter?.askToOpenURL(feed: feed!, indexPath: indexPath)
+//        let screen = FactsModuleBuilder.build()
+//        present(screen, animated: true)
+        //проверка на утечку
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let feed = feed!.news?.count {
+        if let feed = feed?.news?.count {
             return feed
         } else {
             return 0
@@ -35,12 +38,12 @@ extension FeedViewController: FeedViewProtocol, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: FeedTableViewCell.identifier,for: indexPath) as? FeedTableViewCell else { return UITableViewCell() }
-        guard let path = self.feed?.news?[indexPath.row] else { return UITableViewCell() }
+//        guard let path = self.feed?.news?[indexPath.row] else { return UITableViewCell() }
         cell.configureCell(
-            feedIcon: path.imgURL,
-            feedTitle: path.title,
-            feedSource: path.source ,
-            feedCoinRelated: path.relatedCoins?.first?.uppercased()
+            feedIcon: self.feed?.news?[indexPath.row].imgURL,
+            feedTitle: self.feed?.news?[indexPath.row].title,
+            feedSource: self.feed?.news?[indexPath.row].source ,
+            feedCoinRelated: self.feed?.news?[indexPath.row].relatedCoins?.first?.uppercased()
         )
         return cell
     }

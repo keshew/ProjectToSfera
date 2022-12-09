@@ -11,5 +11,5 @@ protocol FeedPresenterProtocol: AnyObject {
     func viewDidLoaded()
     func didLoadInfoAboutFeed(feed: FeedCoin)
     func askToOpenURL(feed: FeedCoin, indexPath: IndexPath)
-    func checkInternetConnection(view: UIViewController,table : UITableView)
+    func askToCheckInternetConnection(view: UIViewController, table: UITableView)
 }

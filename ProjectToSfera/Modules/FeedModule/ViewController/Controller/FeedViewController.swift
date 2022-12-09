@@ -12,10 +12,14 @@ import UIKit
 class FeedViewController: UIViewController {
     var presenter: FeedPresenterProtocol?
     var tableView = UITableView()
-    var feed: FeedCoin? = FeedCoin(news: [News]()) {
+    var feed: FeedCoin? {
         didSet {
             tableView.reloadData()
         }
+    }
+    
+    deinit {
+        print("controller")
     }
     
     func getInfoAboutFeed(feed: FeedCoin) {
@@ -27,7 +31,7 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoaded()
-        presenter?.checkInternetConnection(view: self,table: tableView)
+        presenter?.askToCheckInternetConnection(view: self,table: tableView)
         configureTableView()
         setupContent()
     }

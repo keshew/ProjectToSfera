@@ -20,12 +20,21 @@ extension MarketViewController: MarketViewControllerProtocol, UITableViewDelegat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let vc = DetailInfoCoinViewController(coinUrl: (self.coin.coins?[indexPath.row].icon!)!,
+                                              coinName: (self.coin.coins?[indexPath.row].name!)!,
+                                              coinSymbol: (self.coin.coins?[indexPath.row].symbol!)!,
+                                              coinRank: String(describing: self.coin.coins![indexPath.row].rank!),
+                                              priceBTC: String(describing: self.coin.coins![indexPath.row].priceBtc!),
+                                              priceDollar: String(describing: self.coin.coins![indexPath.row].price!),
+                                              priceChange1Hour: String(describing: self.coin.coins![indexPath.row].priceChange1H!),
+                                              priceChange1Week: String(describing: self.coin.coins![indexPath.row].priceChange1W!))
+       present(vc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: MarketTableViewCell.identifier, for: indexPath) as? MarketTableViewCell else { return UITableViewCell() }
         guard let path = self.coin.coins?[indexPath.row] else { return UITableViewCell() }
-        cell.configureCell( // proverky sdelatь в методе тейбл вью селл
+        cell.configureCell(
             coinIcon: path.icon,
             coinName: path.symbol,
             coinPrice: String(describing: path.price!),
@@ -34,7 +43,7 @@ extension MarketViewController: MarketViewControllerProtocol, UITableViewDelegat
         )
         return cell
     }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 44
     }

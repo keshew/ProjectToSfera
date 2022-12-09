@@ -15,8 +15,5 @@ protocol MarketViewControllerProtocol: AnyObject {
     
     func configureTableView()
     func setupContent()
-    func sortingActionItemBar()
-    func setupSortingItemBar()
-    
     func getInfoAboutCoins(coin: Coin)
 }
