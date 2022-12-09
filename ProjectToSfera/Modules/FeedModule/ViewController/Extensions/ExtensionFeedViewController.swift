@@ -23,9 +23,6 @@ extension FeedViewController: FeedViewProtocol, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         presenter?.askToOpenURL(feed: feed!, indexPath: indexPath)
-//        let screen = FactsModuleBuilder.build()
-//        present(screen, animated: true)
-        //проверка на утечку
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,7 +35,6 @@ extension FeedViewController: FeedViewProtocol, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: FeedTableViewCell.identifier,for: indexPath) as? FeedTableViewCell else { return UITableViewCell() }
-//        guard let path = self.feed?.news?[indexPath.row] else { return UITableViewCell() }
         cell.configureCell(
             feedIcon: self.feed?.news?[indexPath.row].imgURL,
             feedTitle: self.feed?.news?[indexPath.row].title,

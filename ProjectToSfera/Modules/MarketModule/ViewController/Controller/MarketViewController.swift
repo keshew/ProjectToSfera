@@ -17,9 +17,7 @@ class MarketViewController: UIViewController {
             tableView.reloadData()
         }
     }
-    deinit {
-        print("controller")
-    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoaded()

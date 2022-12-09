@@ -20,7 +20,7 @@ extension MarketViewController: MarketViewControllerProtocol, UITableViewDelegat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let vc = DetailInfoCoinViewController(coinUrl: (self.coin.coins?[indexPath.row].icon!)!,
+        let viewController = DetailInfoCoinViewController(coinUrl: (self.coin.coins?[indexPath.row].icon!)!,
                                               coinName: (self.coin.coins?[indexPath.row].name!)!,
                                               coinSymbol: (self.coin.coins?[indexPath.row].symbol!)!,
                                               coinRank: String(describing: self.coin.coins![indexPath.row].rank!),
@@ -28,7 +28,7 @@ extension MarketViewController: MarketViewControllerProtocol, UITableViewDelegat
                                               priceDollar: String(describing: self.coin.coins![indexPath.row].price!),
                                               priceChange1Hour: String(describing: self.coin.coins![indexPath.row].priceChange1H!),
                                               priceChange1Week: String(describing: self.coin.coins![indexPath.row].priceChange1W!))
-       present(vc, animated: true)
+       present(viewController, animated: true)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -42,10 +42,6 @@ extension MarketViewController: MarketViewControllerProtocol, UITableViewDelegat
             coinPriceInDay: String("\((path.priceChange1D!))\("%")")
         )
         return cell
-    }
-
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44
     }
     
     //MARK: - Animation

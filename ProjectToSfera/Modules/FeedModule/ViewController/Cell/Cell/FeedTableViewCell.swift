@@ -85,9 +85,4 @@ class FeedTableViewCell: UITableViewCell, ProtocolFeedTableViewCell {
         self.feedSource.text = feedSource ?? "No source"
         self.feedCoinRelated.text = feedCoinRelated ?? "No coin related"
     }
-    
-    
-    deinit {
-        print("cell")
-    }
 }

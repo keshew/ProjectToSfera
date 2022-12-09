@@ -4,7 +4,7 @@
 //
 //  Created by Артём Коротков on 28.11.2022
 //
-import UIKit
+import CoreData
 class FactsPresenter {
     weak var view: FactsViewProtocol?
     var router: FactsRouterProtocol
@@ -13,6 +13,14 @@ class FactsPresenter {
     init(interactor: FactsInteractorProtocol, router: FactsRouterProtocol) {
         self.interactor = interactor
         self.router = router
+    }
+    
+    func getFetch(fetchResultController: NSFetchedResultsController<NSFetchRequestResult>) {
+        do {
+            try fetchResultController.performFetch()
+        } catch {
+            print(error)
+        }
     }
 }
 

@@ -1,13 +1,10 @@
 //
 //  FeedViewController.swift
-//  Super easy dev
 //
 //  Created by Артём Коротков on 28.11.2022
 //
 
 import UIKit
-
-
 
 class FeedViewController: UIViewController {
     var presenter: FeedPresenterProtocol?
@@ -16,10 +13,6 @@ class FeedViewController: UIViewController {
         didSet {
             tableView.reloadData()
         }
-    }
-    
-    deinit {
-        print("controller")
     }
     
     func getInfoAboutFeed(feed: FeedCoin) {

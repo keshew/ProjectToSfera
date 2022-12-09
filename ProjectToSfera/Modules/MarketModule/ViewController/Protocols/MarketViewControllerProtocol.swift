@@ -10,9 +10,7 @@ import UIKit
 protocol MarketViewControllerProtocol: AnyObject {
     var sortingItemBar: UIBarButtonItem? { get }
     var tableView: UITableView { get }
-    
     var coin: Coin { get }
-    
     func configureTableView()
     func setupContent()
     func getInfoAboutCoins(coin: Coin)

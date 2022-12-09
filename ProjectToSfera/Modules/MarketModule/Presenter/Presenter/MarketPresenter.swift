@@ -23,10 +23,6 @@ class MarketPresenter: MarketPresenterProtocol {
     func viewDidLoaded() {
         interactor.getCoinInfoFromNetwork()
     }
-    
-    deinit {
-        print("presenter")
-    }
 }
 
 

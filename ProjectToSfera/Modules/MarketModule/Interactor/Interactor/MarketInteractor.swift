@@ -7,7 +7,6 @@
 import Foundation
 
 class MarketInteractor: MarketInteractorProtocol{
-    
     weak var presenter: MarketPresenterProtocol?
     var networkAPIManager: APIManager?
     
@@ -18,14 +17,6 @@ class MarketInteractor: MarketInteractorProtocol{
             self.presenter?.didLoadInfoAboutCoins(coin: coin)
         })
     }
-    
-    deinit {
-        print("interactor")
-    }
-    
-    
-    
-    
 }
 
 

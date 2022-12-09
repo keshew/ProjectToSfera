@@ -31,13 +31,8 @@ class FactsViewController: UIViewController, FactsViewProtocol {
         presenter?.getInfoFromPlistFile()
         presenter?.getInfoFromArray()
         configureTabBarItem()
+        presenter?.getFetch(fetchResultController: fetchResultController)
         fetchResultController.delegate = self
-        controllerDidChangeContent(fetchResultController)
-        do {
-            try fetchResultController.performFetch()
-        } catch {
-            print(error)
-        }
     }
     
     //MARK: - FUNCTIONS
@@ -55,14 +50,12 @@ class FactsViewController: UIViewController, FactsViewProtocol {
     }
     
     func configureTabBarItem() {
-        
         addItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addFacts))
         navigationItem.rightBarButtonItem = addItem
     }
     
     
     @objc func addFacts() {
-        
         let navigationProfileEditVC = UINavigationController(rootViewController: AddingFactsModuleBuilder.build())
         present(navigationProfileEditVC, animated: true)
     }

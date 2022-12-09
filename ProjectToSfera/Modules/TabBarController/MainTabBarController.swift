@@ -40,8 +40,6 @@ class MainTabBarController: UITabBarController, MainTabBarControllerProtocol {
     }
     
     func setTabBarAppearance() {
-        let width = tabBar.bounds.width - 10 * 2
-        let height = tabBar.bounds.height + 14 * 2
         tabBar.itemPositioning = .centered
         
         tabBar.tintColor = .mainBlueColor

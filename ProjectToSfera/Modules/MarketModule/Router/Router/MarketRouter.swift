@@ -7,7 +7,4 @@
 
 class MarketRouter: MarketRouterProtocol {
     weak var viewController: MarketViewController?
-    deinit {
-        print("router")
-    }
 }
