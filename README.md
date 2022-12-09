@@ -3,7 +3,9 @@
 **In this app we can:**
 
 + See the most fresh news and read them in Safari by tapping on them! 
-![news](https://user-images.githubusercontent.com/97288599/206768373-bd63ac1a-c5e3-4c8d-8d40-7f8ea6db9961.png) ![safari](https://user-images.githubusercontent.com/97288599/206768469-8faf1641-aec2-44c9-81ec-d45bb36ea9dc.png)
+
+![news](https://user-images.githubusercontent.com/97288599/206768373-bd63ac1a-c5e3-4c8d-8d40-7f8ea6db9961.png) width=30% height=30%>
+![safari](https://user-images.githubusercontent.com/97288599/206768469-8faf1641-aec2-44c9-81ec-d45bb36ea9dc.png) width=30% height=30%>
 
 + Observe the top of the big coin world and knew all of this world! 
 ![market](https://user-images.githubusercontent.com/97288599/206768743-747fdc82-17b7-4c07-ad75-aaa6123ba38a.png) ![detailInfo](https://user-images.githubusercontent.com/97288599/206768793-4f41a87f-4193-45ba-956f-f9c5a77117de.png)
