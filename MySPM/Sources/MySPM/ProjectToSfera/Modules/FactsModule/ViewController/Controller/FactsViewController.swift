@@ -28,7 +28,7 @@ class FactsViewController: UIViewController, FactsViewProtocol {
         super.viewDidLoad()
         configureTableView()
         setupView()
-        presenter?.getInfoFromPlistFile()
+        presenter?.askToDateFromPlist()
         presenter?.getInfoFromArray()
         configureTabBarItem()
         presenter?.getFetch(fetchResultController: fetchResultController)

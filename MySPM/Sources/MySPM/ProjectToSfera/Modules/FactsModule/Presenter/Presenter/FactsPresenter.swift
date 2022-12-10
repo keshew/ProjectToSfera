@@ -22,6 +22,10 @@ class FactsPresenter {
             print(error)
         }
     }
+    
+    func askToDateFromPlist() {
+        interactor.getInfoFromPlistFile()
+    }
 }
 
 

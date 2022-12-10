@@ -66,9 +66,10 @@ extension FactsViewController: UITableViewDataSource, UITableViewDelegate, NSFet
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: FactTableViewCell.identifier,for: indexPath) as? FactTableViewCell else { return UITableViewCell() }
         let subj = fetchResultController.object(at: indexPath) as! Facts
+        guard let image = subj.image else { return UITableViewCell() }
         cell.title.text = subj.title
         cell.descriptison.text = subj.fact
-        cell.imageOfCoin.image = UIImage(data: subj.image!)
+        cell.imageOfCoin.image = UIImage(data: image)
         return cell
     }
     

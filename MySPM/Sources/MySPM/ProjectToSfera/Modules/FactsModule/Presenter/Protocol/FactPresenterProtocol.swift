@@ -7,7 +7,8 @@
 
 import CoreData
 protocol FactsPresenterProtocol: AnyObject {
-    func getInfoFromPlistFile()
+//    func getInfoFromPlistFile()
+    func askToDateFromPlist()
     func getInfoFromArray()
     func getFetch(fetchResultController: NSFetchedResultsController<NSFetchRequestResult>)
 }

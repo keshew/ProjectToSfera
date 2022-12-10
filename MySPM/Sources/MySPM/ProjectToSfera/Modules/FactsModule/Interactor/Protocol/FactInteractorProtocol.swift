@@ -8,4 +8,5 @@
 import CoreData
 
 protocol FactsInteractorProtocol: AnyObject {
+    func getInfoFromPlistFile()
 }
