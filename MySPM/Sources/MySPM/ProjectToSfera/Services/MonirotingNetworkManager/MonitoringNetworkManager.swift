@@ -8,9 +8,9 @@
 import UIKit
 import Network
 
-final class MonitoringNetworkManager: ProtocolMonitoringNetworkManager {
+final public class MonitoringNetworkManager: ProtocolMonitoringNetworkManager {
     
-    static let shared = MonitoringNetworkManager()
+    static public let shared = MonitoringNetworkManager()
     let queue = DispatchQueue.global()
     let monitor: NWPathMonitor
     public private(set) var isConnected: Bool = false

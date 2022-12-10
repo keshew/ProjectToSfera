@@ -80,7 +80,7 @@ class FeedTableViewCell: UITableViewCell, ProtocolFeedTableViewCell {
 
     func configureCell(feedIcon: String?, feedTitle: String?, feedSource: String?, feedCoinRelated: String?) {
         self.feedIcon.kf.indicatorType = .activity
-        self.feedIcon.kf.setImage(with: URL(string: feedIcon!), placeholder: UIImage(named: "defaultCoin"))
+        self.feedIcon.kf.setImage(with: URL(string: feedIcon!), placeholder: UIImage(named: "defaultCoin", in: .module, compatibleWith: nil))
         self.feedTitle.text =  feedTitle ?? "No title"
         self.feedSource.text = feedSource ?? "No source"
         self.feedCoinRelated.text = feedCoinRelated ?? "No coin related"

@@ -59,7 +59,8 @@ class AddingFactsViewController: UIViewController, AddingFactsViewProtocol {
     }
     
     @objc func saveInfo() {
-        presenter?.setInfoCoreDate(image: UIImage(named: "test")!, textOfField: titleTextField.text!, textOfView: factTextView.text)
+        guard let image = UIImage(named: "test", in: .module, compatibleWith: nil) else { return }
+        presenter?.setInfoCoreDate(image: image, textOfField: titleTextField.text!, textOfView: factTextView.text)
         dismiss(animated: true)
         
     }

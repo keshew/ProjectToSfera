@@ -7,9 +7,9 @@
 
 import UIKit
 
-class MainTabBarController: UITabBarController, MainTabBarControllerProtocol {
+public class MainTabBarController: UITabBarController, MainTabBarControllerProtocol {
     
-    override func viewDidLoad() {
+     public override func viewDidLoad() {
         super.viewDidLoad()
         generateTabBar()
         setTabBarAppearance()
@@ -20,16 +20,16 @@ class MainTabBarController: UITabBarController, MainTabBarControllerProtocol {
             generateViewControllers(
                 viewController: UINavigationController(rootViewController: FeedModuleBuilder.build()),
                 title: "Новости",
-                image: UIImage(named: "feeds")
+                image: UIImage(named: "feeds", in: .module, compatibleWith: nil)
             ),
             generateViewControllers(viewController: UINavigationController(rootViewController: MarketModuleBuilder.build()),
                                     title: "Рынок",
-                                    image: UIImage(named: "market")
+                                    image: UIImage(named: "market", in: .module, compatibleWith: nil)
                                    ),
             generateViewControllers(
                 viewController: UINavigationController(rootViewController: FactsModuleBuilder.build()) ,
                 title: "Факты",
-                image: UIImage(named: "facts"))
+                image: UIImage(named: "facts", in: .module, compatibleWith: nil))
         ],animated: true)
     }
     

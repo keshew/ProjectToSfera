@@ -82,7 +82,7 @@ class MarketTableViewCell: UITableViewCell, MarketTableViewCellProtocol {
     func configureCell(coinIcon: String?, coinName: String?, coinPrice: String?, coinPositionInTable: String?, coinPriceInDay: String?) {
         guard let iconURL = URL(string: coinIcon!) else { return }
         guard let coinPriceIn1Day = coinPriceInDay else { return }
-        self.coinIcon.kf.setImage(with: iconURL, placeholder: UIImage(named: "defaultCoin"))
+        self.coinIcon.kf.setImage(with: iconURL, placeholder: UIImage(named: "defaultCoin", in: .module, compatibleWith: nil))
         self.coinName.text = coinName ?? "No name"
         self.coinPrice.text = coinPrice ?? "No price"
         self.coinPositionInTable.text = coinPositionInTable

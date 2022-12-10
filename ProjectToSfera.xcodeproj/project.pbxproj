@@ -7,152 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		86307D382943273100DDF107 /* DetailInfoCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86307D332943273100DDF107 /* DetailInfoCoinViewController.swift */; };
-		86307D3E29436CE800DDF107 /* FactExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86307D3D29436CE800DDF107 /* FactExtension.swift */; };
-		86307D4329436D6500DDF107 /* FactRoterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86307D4229436D6500DDF107 /* FactRoterProtocol.swift */; };
-		86307D4529436DA200DDF107 /* FactPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86307D4429436DA200DDF107 /* FactPresenterProtocol.swift */; };
-		86307D4929436E4B00DDF107 /* FactViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86307D4829436E4B00DDF107 /* FactViewControllerProtocol.swift */; };
-		86307D4B29436E8000DDF107 /* FactViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86307D4A29436E8000DDF107 /* FactViewControllerExtension.swift */; };
-		86307D502943712800DDF107 /* FactTableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86307D4F2943712800DDF107 /* FactTableViewCellProtocol.swift */; };
-		86307D542943716A00DDF107 /* FactInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86307D532943716A00DDF107 /* FactInteractorProtocol.swift */; };
-		86307D59294371FA00DDF107 /* AddingFactModuleBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86307D58294371FA00DDF107 /* AddingFactModuleBuilderProtocol.swift */; };
-		86307D5F2943729400DDF107 /* AddingFactPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86307D5E2943729400DDF107 /* AddingFactPresenterProtocol.swift */; };
-		86307D65294372C500DDF107 /* AddingRoterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86307D64294372C500DDF107 /* AddingRoterProtocol.swift */; };
-		863301252935E8E900A1C409 /* FeedCoinsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863301242935E8E900A1C409 /* FeedCoinsModel.swift */; };
-		864068B02937EE1E00241AF2 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864068AF2937EE1E00241AF2 /* UILabel+.swift */; };
-		864068C12937FBE100241AF2 /* MainTabBarControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864068C02937FBE100241AF2 /* MainTabBarControllerProtocol.swift */; };
-		864068C92937FDA600241AF2 /* MarketViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864068C82937FDA600241AF2 /* MarketViewControllerProtocol.swift */; };
-		864068CC2937FECB00241AF2 /* MarketTableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864068CB2937FECB00241AF2 /* MarketTableViewCellProtocol.swift */; };
-		864068CE2937FF9500241AF2 /* ExtensionMarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864068CD2937FF9500241AF2 /* ExtensionMarketViewController.swift */; };
-		864068D12938010500241AF2 /* MarketRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864068D02938010500241AF2 /* MarketRouterProtocol.swift */; };
-		864068D42938014E00241AF2 /* MarketPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864068D32938014E00241AF2 /* MarketPresenterProtocol.swift */; };
-		864068D72938017600241AF2 /* MarketInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864068D62938017600241AF2 /* MarketInteractorProtocol.swift */; };
-		8643241F2943A6E2008E543D /* AddFactViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8643241E2943A6E2008E543D /* AddFactViewControllerProtocol.swift */; };
-		864324212943A719008E543D /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864324202943A719008E543D /* ExtensionViewController.swift */; };
-		864324262943A762008E543D /* AddInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864324252943A762008E543D /* AddInteractorProtocol.swift */; };
-		8643242A2943A8E7008E543D /* DetailInfoCoinProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864324292943A8E7008E543D /* DetailInfoCoinProtocol.swift */; };
 		865535B7293499D90013488B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535B6293499D90013488B /* AppDelegate.swift */; };
 		865535B9293499D90013488B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535B8293499D90013488B /* SceneDelegate.swift */; };
-		865535C1293499D90013488B /* ProjectToSfera.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 865535BF293499D90013488B /* ProjectToSfera.xcdatamodeld */; };
-		865535C3293499DA0013488B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 865535C2293499DA0013488B /* Assets.xcassets */; };
-		865535C6293499DA0013488B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865535C4293499DA0013488B /* LaunchScreen.storyboard */; };
-		865535D029349A800013488B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535CF29349A800013488B /* MainTabBarController.swift */; };
-		865535D229349AE20013488B /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535D129349AE20013488B /* UIColor+.swift */; };
-		865535DD29349C4E0013488B /* FeedModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535D829349C4E0013488B /* FeedModuleBuilder.swift */; };
-		865535DE29349C4E0013488B /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535D929349C4E0013488B /* FeedPresenter.swift */; };
-		865535DF29349C4E0013488B /* FeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535DA29349C4E0013488B /* FeedRouter.swift */; };
-		865535E029349C4E0013488B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535DB29349C4E0013488B /* FeedViewController.swift */; };
-		865535E129349C4E0013488B /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535DC29349C4E0013488B /* FeedInteractor.swift */; };
-		865535E729349C580013488B /* MarketModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535E229349C580013488B /* MarketModuleBuilder.swift */; };
-		865535E829349C580013488B /* MarketPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535E329349C580013488B /* MarketPresenter.swift */; };
-		865535E929349C580013488B /* MarketRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535E429349C580013488B /* MarketRouter.swift */; };
-		865535EA29349C580013488B /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535E529349C580013488B /* MarketViewController.swift */; };
-		865535EB29349C580013488B /* MarketInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535E629349C580013488B /* MarketInteractor.swift */; };
-		865535F129349C5F0013488B /* FactsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535EC29349C5F0013488B /* FactsModuleBuilder.swift */; };
-		865535F229349C5F0013488B /* FactsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535ED29349C5F0013488B /* FactsPresenter.swift */; };
-		865535F329349C5F0013488B /* FactsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535EE29349C5F0013488B /* FactsRouter.swift */; };
-		865535F429349C5F0013488B /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535EF29349C5F0013488B /* FactsViewController.swift */; };
-		865535F529349C5F0013488B /* FactsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865535F029349C5F0013488B /* FactsInteractor.swift */; };
-		8659128C2940D0AC007769C8 /* AddingFactsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865912872940D0AC007769C8 /* AddingFactsModuleBuilder.swift */; };
-		8659128D2940D0AC007769C8 /* AddingFactsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865912882940D0AC007769C8 /* AddingFactsPresenter.swift */; };
-		8659128E2940D0AC007769C8 /* AddingFactsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865912892940D0AC007769C8 /* AddingFactsRouter.swift */; };
-		8659128F2940D0AC007769C8 /* AddingFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8659128A2940D0AC007769C8 /* AddingFactsViewController.swift */; };
-		865912902940D0AC007769C8 /* AddingFactsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8659128B2940D0AC007769C8 /* AddingFactsInteractor.swift */; };
-		868715432938D0BB00F9BAAE /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868715422938D0BB00F9BAAE /* FeedTableViewCell.swift */; };
-		868FEF76293B478400E60C80 /* FactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868FEF75293B478400E60C80 /* FactTableViewCell.swift */; };
-		8690FF3A29355265008CE3A2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8690FF3929355265008CE3A2 /* CoreDataManager.swift */; };
-		8690FF3C29355277008CE3A2 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8690FF3B29355277008CE3A2 /* APIManager.swift */; };
-		8690FF402935584B008CE3A2 /* CoinsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8690FF3F2935584B008CE3A2 /* CoinsModel.swift */; };
-		869F1783293E570800E8EB2B /* Facts+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869F1781293E570800E8EB2B /* Facts+CoreDataClass.swift */; };
-		869F1784293E570800E8EB2B /* Facts+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869F1782293E570800E8EB2B /* Facts+CoreDataProperties.swift */; };
 		869F178B293E7BB100E8EB2B /* PropertyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 869F178A293E7BB100E8EB2B /* PropertyList.plist */; };
-		86BDCA3429361696007C96E0 /* MarketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BDCA3329361696007C96E0 /* MarketTableViewCell.swift */; };
-		86DF5722293957E3001DD1D3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 86DF5721293957E3001DD1D3 /* Kingfisher */; };
-		86F84BED293AA1CF0072D82C /* MonitoringNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F84BEC293AA1CF0072D82C /* MonitoringNetworkManager.swift */; };
-		86F84BF1293ABA520072D82C /* ExtensionFeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F84BF0293ABA520072D82C /* ExtensionFeedPresenter.swift */; };
-		86F84BF3293ABA940072D82C /* ProtocolFeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F84BF2293ABA940072D82C /* ProtocolFeedPresenter.swift */; };
-		86F84BF7293ABAD80072D82C /* ProtocolFeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F84BF6293ABAD80072D82C /* ProtocolFeedRouter.swift */; };
-		86F84BFD293ABB330072D82C /* ProtocolFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F84BFC293ABB330072D82C /* ProtocolFeedViewController.swift */; };
-		86F84BFF293ABB3F0072D82C /* ExtensionFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F84BFE293ABB3F0072D82C /* ExtensionFeedViewController.swift */; };
-		86F84C02293ABC330072D82C /* ProtocolFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F84C01293ABC330072D82C /* ProtocolFeedTableViewCell.swift */; };
-		86F84C05293ABD1A0072D82C /* ProtocolFeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F84C04293ABD1A0072D82C /* ProtocolFeedInteractor.swift */; };
-		86F84C09293ABFCB0072D82C /* ProtocolAPIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F84C08293ABFCB0072D82C /* ProtocolAPIType.swift */; };
-		86F84C0D293AC0D20072D82C /* ProtocolMonitoringNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F84C0C293AC0D20072D82C /* ProtocolMonitoringNetworkManager.swift */; };
+		86EDDCE92944022200C35BDA /* MySPM in Frameworks */ = {isa = PBXBuildFile; productRef = 86EDDCE82944022200C35BDA /* MySPM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		86307D332943273100DDF107 /* DetailInfoCoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoCoinViewController.swift; sourceTree = "<group>"; };
-		86307D3D29436CE800DDF107 /* FactExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactExtension.swift; sourceTree = "<group>"; };
-		86307D4229436D6500DDF107 /* FactRoterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactRoterProtocol.swift; sourceTree = "<group>"; };
-		86307D4429436DA200DDF107 /* FactPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactPresenterProtocol.swift; sourceTree = "<group>"; };
-		86307D4829436E4B00DDF107 /* FactViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactViewControllerProtocol.swift; sourceTree = "<group>"; };
-		86307D4A29436E8000DDF107 /* FactViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactViewControllerExtension.swift; sourceTree = "<group>"; };
-		86307D4F2943712800DDF107 /* FactTableViewCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactTableViewCellProtocol.swift; sourceTree = "<group>"; };
-		86307D532943716A00DDF107 /* FactInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactInteractorProtocol.swift; sourceTree = "<group>"; };
-		86307D58294371FA00DDF107 /* AddingFactModuleBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingFactModuleBuilderProtocol.swift; sourceTree = "<group>"; };
-		86307D5E2943729400DDF107 /* AddingFactPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingFactPresenterProtocol.swift; sourceTree = "<group>"; };
-		86307D64294372C500DDF107 /* AddingRoterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingRoterProtocol.swift; sourceTree = "<group>"; };
-		863301242935E8E900A1C409 /* FeedCoinsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoinsModel.swift; sourceTree = "<group>"; };
-		864068AF2937EE1E00241AF2 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
-		864068C02937FBE100241AF2 /* MainTabBarControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarControllerProtocol.swift; sourceTree = "<group>"; };
-		864068C82937FDA600241AF2 /* MarketViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewControllerProtocol.swift; sourceTree = "<group>"; };
-		864068CB2937FECB00241AF2 /* MarketTableViewCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTableViewCellProtocol.swift; sourceTree = "<group>"; };
-		864068CD2937FF9500241AF2 /* ExtensionMarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionMarketViewController.swift; sourceTree = "<group>"; };
-		864068D02938010500241AF2 /* MarketRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketRouterProtocol.swift; sourceTree = "<group>"; };
-		864068D32938014E00241AF2 /* MarketPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPresenterProtocol.swift; sourceTree = "<group>"; };
-		864068D62938017600241AF2 /* MarketInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketInteractorProtocol.swift; sourceTree = "<group>"; };
-		8643241E2943A6E2008E543D /* AddFactViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFactViewControllerProtocol.swift; sourceTree = "<group>"; };
-		864324202943A719008E543D /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
-		864324252943A762008E543D /* AddInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInteractorProtocol.swift; sourceTree = "<group>"; };
-		864324292943A8E7008E543D /* DetailInfoCoinProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoCoinProtocol.swift; sourceTree = "<group>"; };
+		8648814A2943FD3C00112B0E /* MySPM */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MySPM; sourceTree = "<group>"; };
 		865535B3293499D90013488B /* ProjectToSfera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectToSfera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		865535B6293499D90013488B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		865535B8293499D90013488B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		865535C0293499D90013488B /* ProjectToSfera.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProjectToSfera.xcdatamodel; sourceTree = "<group>"; };
-		865535C2293499DA0013488B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		865535C5293499DA0013488B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		865535C7293499DA0013488B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		865535CF29349A800013488B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		865535D129349AE20013488B /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
-		865535D829349C4E0013488B /* FeedModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModuleBuilder.swift; sourceTree = "<group>"; };
-		865535D929349C4E0013488B /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
-		865535DA29349C4E0013488B /* FeedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRouter.swift; sourceTree = "<group>"; };
-		865535DB29349C4E0013488B /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		865535DC29349C4E0013488B /* FeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
-		865535E229349C580013488B /* MarketModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketModuleBuilder.swift; sourceTree = "<group>"; };
-		865535E329349C580013488B /* MarketPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPresenter.swift; sourceTree = "<group>"; };
-		865535E429349C580013488B /* MarketRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketRouter.swift; sourceTree = "<group>"; };
-		865535E529349C580013488B /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
-		865535E629349C580013488B /* MarketInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketInteractor.swift; sourceTree = "<group>"; };
-		865535EC29349C5F0013488B /* FactsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsModuleBuilder.swift; sourceTree = "<group>"; };
-		865535ED29349C5F0013488B /* FactsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsPresenter.swift; sourceTree = "<group>"; };
-		865535EE29349C5F0013488B /* FactsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsRouter.swift; sourceTree = "<group>"; };
-		865535EF29349C5F0013488B /* FactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewController.swift; sourceTree = "<group>"; };
-		865535F029349C5F0013488B /* FactsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsInteractor.swift; sourceTree = "<group>"; };
-		865912872940D0AC007769C8 /* AddingFactsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingFactsModuleBuilder.swift; sourceTree = "<group>"; };
-		865912882940D0AC007769C8 /* AddingFactsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingFactsPresenter.swift; sourceTree = "<group>"; };
-		865912892940D0AC007769C8 /* AddingFactsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingFactsRouter.swift; sourceTree = "<group>"; };
-		8659128A2940D0AC007769C8 /* AddingFactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingFactsViewController.swift; sourceTree = "<group>"; };
-		8659128B2940D0AC007769C8 /* AddingFactsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingFactsInteractor.swift; sourceTree = "<group>"; };
-		868715422938D0BB00F9BAAE /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
-		868FEF75293B478400E60C80 /* FactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactTableViewCell.swift; sourceTree = "<group>"; };
-		8690FF3929355265008CE3A2 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		8690FF3B29355277008CE3A2 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		8690FF3F2935584B008CE3A2 /* CoinsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsModel.swift; sourceTree = "<group>"; };
-		869F1781293E570800E8EB2B /* Facts+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Facts+CoreDataClass.swift"; sourceTree = "<group>"; };
-		869F1782293E570800E8EB2B /* Facts+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Facts+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		869F178A293E7BB100E8EB2B /* PropertyList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PropertyList.plist; sourceTree = "<group>"; };
-		86BDCA3329361696007C96E0 /* MarketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTableViewCell.swift; sourceTree = "<group>"; };
-		86F84BEC293AA1CF0072D82C /* MonitoringNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringNetworkManager.swift; sourceTree = "<group>"; };
-		86F84BF0293ABA520072D82C /* ExtensionFeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionFeedPresenter.swift; sourceTree = "<group>"; };
-		86F84BF2293ABA940072D82C /* ProtocolFeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolFeedPresenter.swift; sourceTree = "<group>"; };
-		86F84BF6293ABAD80072D82C /* ProtocolFeedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolFeedRouter.swift; sourceTree = "<group>"; };
-		86F84BFC293ABB330072D82C /* ProtocolFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolFeedViewController.swift; sourceTree = "<group>"; };
-		86F84BFE293ABB3F0072D82C /* ExtensionFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionFeedViewController.swift; sourceTree = "<group>"; };
-		86F84C01293ABC330072D82C /* ProtocolFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolFeedTableViewCell.swift; sourceTree = "<group>"; };
-		86F84C04293ABD1A0072D82C /* ProtocolFeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolFeedInteractor.swift; sourceTree = "<group>"; };
-		86F84C08293ABFCB0072D82C /* ProtocolAPIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolAPIType.swift; sourceTree = "<group>"; };
-		86F84C0C293AC0D20072D82C /* ProtocolMonitoringNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolMonitoringNetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,490 +27,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86DF5722293957E3001DD1D3 /* Kingfisher in Frameworks */,
+				86EDDCE92944022200C35BDA /* MySPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		86307D3A29436CB200DDF107 /* Protocol */ = {
+		8648814B2943FDC300112B0E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				86307D4429436DA200DDF107 /* FactPresenterProtocol.swift */,
 			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		86307D3F29436D2600DDF107 /* FactExtension */ = {
-			isa = PBXGroup;
-			children = (
-				86307D3D29436CE800DDF107 /* FactExtension.swift */,
-			);
-			path = FactExtension;
-			sourceTree = "<group>";
-		};
-		86307D4029436D3500DDF107 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				865535ED29349C5F0013488B /* FactsPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		86307D4129436D5100DDF107 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				86307D4229436D6500DDF107 /* FactRoterProtocol.swift */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		86307D4629436DBF00DDF107 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				865535EE29349C5F0013488B /* FactsRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		86307D4729436E3C00DDF107 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				86307D4829436E4B00DDF107 /* FactViewControllerProtocol.swift */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		86307D4C29436F7500DDF107 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				865535EF29349C5F0013488B /* FactsViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		86307D4D29436F9A00DDF107 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				86307D4A29436E8000DDF107 /* FactViewControllerExtension.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		86307D4E29436FAE00DDF107 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				868FEF75293B478400E60C80 /* FactTableViewCell.swift */,
-				86307D4F2943712800DDF107 /* FactTableViewCellProtocol.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		86307D512943714700DDF107 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				865535F029349C5F0013488B /* FactsInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		86307D522943714C00DDF107 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				86307D532943716A00DDF107 /* FactInteractorProtocol.swift */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		86307D56294371DD00DDF107 /* ModuleBuilder */ = {
-			isa = PBXGroup;
-			children = (
-				86307D57294371E900DDF107 /* Protocol */,
-				86307D5A2943720000DDF107 /* Builder */,
-			);
-			path = ModuleBuilder;
-			sourceTree = "<group>";
-		};
-		86307D57294371E900DDF107 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				86307D58294371FA00DDF107 /* AddingFactModuleBuilderProtocol.swift */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		86307D5A2943720000DDF107 /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-				865912872940D0AC007769C8 /* AddingFactsModuleBuilder.swift */,
-			);
-			path = Builder;
-			sourceTree = "<group>";
-		};
-		86307D5B2943727000DDF107 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				86307D5D2943728000DDF107 /* Protocol */,
-				86307D5C2943727700DDF107 /* Presenter */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		86307D5C2943727700DDF107 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				865912882940D0AC007769C8 /* AddingFactsPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		86307D5D2943728000DDF107 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				86307D5E2943729400DDF107 /* AddingFactPresenterProtocol.swift */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		86307D60294372A800DDF107 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				86307D62294372B000DDF107 /* Protocol */,
-				86307D61294372AC00DDF107 /* Router */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		86307D61294372AC00DDF107 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				865912892940D0AC007769C8 /* AddingFactsRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		86307D62294372B000DDF107 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				86307D64294372C500DDF107 /* AddingRoterProtocol.swift */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		863301222935E8CE00A1C409 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				86F84C07293ABFC20072D82C /* Protocols */,
-				8690FF3B29355277008CE3A2 /* APIManager.swift */,
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		863301232935E8D900A1C409 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				8690FF3F2935584B008CE3A2 /* CoinsModel.swift */,
-				863301242935E8E900A1C409 /* FeedCoinsModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		863301262935E8F100A1C409 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				869F1785293E573700E8EB2B /* EntityModel */,
-				8690FF3929355265008CE3A2 /* CoreDataManager.swift */,
-				865535BF293499D90013488B /* ProjectToSfera.xcdatamodeld */,
-			);
-			path = CoreData;
-			sourceTree = "<group>";
-		};
-		864068B12937F99D00241AF2 /* ModuleBuilder */ = {
-			isa = PBXGroup;
-			children = (
-				8659FE73294206F200460E6E /* Builder */,
-			);
-			path = ModuleBuilder;
-			sourceTree = "<group>";
-		};
-		864068B22937F9AD00241AF2 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				864068D52938015700241AF2 /* Protocols */,
-				8659FE71294206C200460E6E /* Presenter */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		864068B32937F9BC00241AF2 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				864068D22938011400241AF2 /* Protocols */,
-				8659FE72294206C900460E6E /* Router */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		864068B42937F9C000241AF2 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				864068CA2937FDAA00241AF2 /* Protocols */,
-				864068CF2937FF9800241AF2 /* Extensions */,
-				868715412938D09C00F9BAAE /* Controller */,
-				86BDCA3529361699007C96E0 /* Cell */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		864068B52937F9C800241AF2 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				864068D82938029600241AF2 /* Protocols */,
-				8659FE70294206BB00460E6E /* Interactor */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		864068B62937FA5400241AF2 /* ModuleBuilder */ = {
-			isa = PBXGroup;
-			children = (
-				8659FE6A294203EE00460E6E /* Builder */,
-			);
-			path = ModuleBuilder;
-			sourceTree = "<group>";
-		};
-		864068B72937FA6100241AF2 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				86F84BEE293AB9FD0072D82C /* Protocols */,
-				8659FE6D2942044A00460E6E /* Presenter */,
-				86F84BEF293ABA040072D82C /* Extensions */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		864068B82937FA6700241AF2 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				86F84BF5293ABAC70072D82C /* Protocols */,
-				8659FE6E2942045300460E6E /* Router */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		864068B92937FA6D00241AF2 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				86F84BFA293ABB190072D82C /* Protocols */,
-				86F84BFB293ABB1C0072D82C /* Extensions */,
-				86626FCD293E01CC00B69C5C /* Controller */,
-				86F84BF8293ABAFD0072D82C /* Cell */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		864068BA2937FA7400241AF2 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				86F84C03293ABD0D0072D82C /* Protocols */,
-				8659FE6C2942040B00460E6E /* Interactor */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		864068BB2937FA8D00241AF2 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				86307D522943714C00DDF107 /* Protocol */,
-				86307D512943714700DDF107 /* Interactor */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		864068BC2937FA9300241AF2 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				86307D4729436E3C00DDF107 /* Protocol */,
-				86307D4C29436F7500DDF107 /* Controller */,
-				86307D4D29436F9A00DDF107 /* Extension */,
-				86307D4E29436FAE00DDF107 /* Cell */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		864068BD2937FA9A00241AF2 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				86307D4129436D5100DDF107 /* Protocol */,
-				86307D4629436DBF00DDF107 /* Router */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		864068BE2937FAA300241AF2 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				86307D3A29436CB200DDF107 /* Protocol */,
-				86307D4029436D3500DDF107 /* Presenter */,
-				86307D3F29436D2600DDF107 /* FactExtension */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		864068BF2937FAA800241AF2 /* ModuleBuilder */ = {
-			isa = PBXGroup;
-			children = (
-				8659FE74294206FB00460E6E /* Builder */,
-			);
-			name = ModuleBuilder;
-			sourceTree = "<group>";
-		};
-		864068C22937FC3300241AF2 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				864068C02937FBE100241AF2 /* MainTabBarControllerProtocol.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		864068C72937FCE000241AF2 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				864068CB2937FECB00241AF2 /* MarketTableViewCellProtocol.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		864068CA2937FDAA00241AF2 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				864068C82937FDA600241AF2 /* MarketViewControllerProtocol.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		864068CF2937FF9800241AF2 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				864068CD2937FF9500241AF2 /* ExtensionMarketViewController.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		864068D22938011400241AF2 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				864068D02938010500241AF2 /* MarketRouterProtocol.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		864068D52938015700241AF2 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				864068D32938014E00241AF2 /* MarketPresenterProtocol.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		864068D82938029600241AF2 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				864068D62938017600241AF2 /* MarketInteractorProtocol.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		8643241A2943A69E008E543D /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				8643241B2943A6A3008E543D /* Protocol */,
-				8643241C2943A6AA008E543D /* Controller */,
-				8643241D2943A6CC008E543D /* Extension */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		8643241B2943A6A3008E543D /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				8643241E2943A6E2008E543D /* AddFactViewControllerProtocol.swift */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		8643241C2943A6AA008E543D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				8659128A2940D0AC007769C8 /* AddingFactsViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		8643241D2943A6CC008E543D /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				864324202943A719008E543D /* ExtensionViewController.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		864324222943A731008E543D /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				864324232943A738008E543D /* Protocol */,
-				864324242943A741008E543D /* Interactor */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		864324232943A738008E543D /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				864324252943A762008E543D /* AddInteractorProtocol.swift */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		864324242943A741008E543D /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				8659128B2940D0AC007769C8 /* AddingFactsInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		864324272943A8C9008E543D /* DetailInfoCoinModule */ = {
-			isa = PBXGroup;
-			children = (
-				864324282943A8DA008E543D /* Protocol */,
-				8643242B2943A904008E543D /* ViewController */,
-			);
-			path = DetailInfoCoinModule;
-			sourceTree = "<group>";
-		};
-		864324282943A8DA008E543D /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				864324292943A8E7008E543D /* DetailInfoCoinProtocol.swift */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		8643242B2943A904008E543D /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				86307D332943273100DDF107 /* DetailInfoCoinViewController.swift */,
-			);
-			path = ViewController;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		865535AA293499D90013488B = {
 			isa = PBXGroup;
 			children = (
-				865535B5293499D90013488B /* ProjectToSfera */,
+				865535CD29349A1D0013488B /* Application */,
+				8648814A2943FD3C00112B0E /* MySPM */,
 				865535B4293499D90013488B /* Products */,
+				8648814B2943FDC300112B0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -655,346 +59,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		865535B5293499D90013488B /* ProjectToSfera */ = {
-			isa = PBXGroup;
-			children = (
-				865535D329349BF80013488B /* Modules */,
-				8690FF3729355173008CE3A2 /* Extensions */,
-				865535CE29349A2C0013488B /* Resources */,
-				865535CD29349A1D0013488B /* Application */,
-				86F84C0A293ABFDE0072D82C /* Services */,
-			);
-			path = ProjectToSfera;
-			sourceTree = "<group>";
-		};
 		865535CD29349A1D0013488B /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				865535C7293499DA0013488B /* Info.plist */,
+				869F178A293E7BB100E8EB2B /* PropertyList.plist */,
 				865535B6293499D90013488B /* AppDelegate.swift */,
 				865535B8293499D90013488B /* SceneDelegate.swift */,
 			);
 			path = Application;
-			sourceTree = "<group>";
-		};
-		865535CE29349A2C0013488B /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				865535C2293499DA0013488B /* Assets.xcassets */,
-				865535C4293499DA0013488B /* LaunchScreen.storyboard */,
-				865535C7293499DA0013488B /* Info.plist */,
-				869F178A293E7BB100E8EB2B /* PropertyList.plist */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		865535D329349BF80013488B /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				865535D729349C2C0013488B /* FeedModule */,
-				865535D629349C2B0013488B /* MarketModule */,
-				865535D529349C280013488B /* FactsModule */,
-				8659FE69294203B800460E6E /* AddFactModule */,
-				865535D429349C080013488B /* TabBarController */,
-				864324272943A8C9008E543D /* DetailInfoCoinModule */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		865535D429349C080013488B /* TabBarController */ = {
-			isa = PBXGroup;
-			children = (
-				864068C22937FC3300241AF2 /* Protocols */,
-				865535CF29349A800013488B /* MainTabBarController.swift */,
-			);
-			path = TabBarController;
-			sourceTree = "<group>";
-		};
-		865535D529349C280013488B /* FactsModule */ = {
-			isa = PBXGroup;
-			children = (
-				864068BF2937FAA800241AF2 /* ModuleBuilder */,
-				864068BE2937FAA300241AF2 /* Presenter */,
-				864068BD2937FA9A00241AF2 /* Router */,
-				864068BC2937FA9300241AF2 /* ViewController */,
-				864068BB2937FA8D00241AF2 /* Interactor */,
-			);
-			path = FactsModule;
-			sourceTree = "<group>";
-		};
-		865535D629349C2B0013488B /* MarketModule */ = {
-			isa = PBXGroup;
-			children = (
-				864068B12937F99D00241AF2 /* ModuleBuilder */,
-				864068B42937F9C000241AF2 /* ViewController */,
-				864068B52937F9C800241AF2 /* Interactor */,
-				864068B22937F9AD00241AF2 /* Presenter */,
-				864068B32937F9BC00241AF2 /* Router */,
-			);
-			path = MarketModule;
-			sourceTree = "<group>";
-		};
-		865535D729349C2C0013488B /* FeedModule */ = {
-			isa = PBXGroup;
-			children = (
-				864068B62937FA5400241AF2 /* ModuleBuilder */,
-				864068B92937FA6D00241AF2 /* ViewController */,
-				864068BA2937FA7400241AF2 /* Interactor */,
-				864068B72937FA6100241AF2 /* Presenter */,
-				864068B82937FA6700241AF2 /* Router */,
-			);
-			path = FeedModule;
-			sourceTree = "<group>";
-		};
-		8659FE69294203B800460E6E /* AddFactModule */ = {
-			isa = PBXGroup;
-			children = (
-				86307D56294371DD00DDF107 /* ModuleBuilder */,
-				86307D5B2943727000DDF107 /* Presenter */,
-				86307D60294372A800DDF107 /* Router */,
-				8643241A2943A69E008E543D /* ViewController */,
-				864324222943A731008E543D /* Interactor */,
-			);
-			path = AddFactModule;
-			sourceTree = "<group>";
-		};
-		8659FE6A294203EE00460E6E /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-				865535D829349C4E0013488B /* FeedModuleBuilder.swift */,
-			);
-			path = Builder;
-			sourceTree = "<group>";
-		};
-		8659FE6B294203FE00460E6E /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				868715422938D0BB00F9BAAE /* FeedTableViewCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		8659FE6C2942040B00460E6E /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				865535DC29349C4E0013488B /* FeedInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		8659FE6D2942044A00460E6E /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				865535D929349C4E0013488B /* FeedPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		8659FE6E2942045300460E6E /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				865535DA29349C4E0013488B /* FeedRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		8659FE6F294206B200460E6E /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				86BDCA3329361696007C96E0 /* MarketTableViewCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		8659FE70294206BB00460E6E /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				865535E629349C580013488B /* MarketInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		8659FE71294206C200460E6E /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				865535E329349C580013488B /* MarketPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		8659FE72294206C900460E6E /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				865535E429349C580013488B /* MarketRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		8659FE73294206F200460E6E /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-				865535E229349C580013488B /* MarketModuleBuilder.swift */,
-			);
-			path = Builder;
-			sourceTree = "<group>";
-		};
-		8659FE74294206FB00460E6E /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-				865535EC29349C5F0013488B /* FactsModuleBuilder.swift */,
-			);
-			name = Builder;
-			sourceTree = "<group>";
-		};
-		86626FCD293E01CC00B69C5C /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				865535DB29349C4E0013488B /* FeedViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		868715412938D09C00F9BAAE /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				865535E529349C580013488B /* MarketViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		8690FF3729355173008CE3A2 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				865535D129349AE20013488B /* UIColor+.swift */,
-				864068AF2937EE1E00241AF2 /* UILabel+.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		8690FF382935517D008CE3A2 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				863301232935E8D900A1C409 /* Model */,
-				863301222935E8CE00A1C409 /* Manager */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		869F1785293E573700E8EB2B /* EntityModel */ = {
-			isa = PBXGroup;
-			children = (
-				869F1781293E570800E8EB2B /* Facts+CoreDataClass.swift */,
-				869F1782293E570800E8EB2B /* Facts+CoreDataProperties.swift */,
-			);
-			path = EntityModel;
-			sourceTree = "<group>";
-		};
-		86BDCA3529361699007C96E0 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				864068C72937FCE000241AF2 /* Protocols */,
-				8659FE6F294206B200460E6E /* Cell */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		86F84BEE293AB9FD0072D82C /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				86F84BF2293ABA940072D82C /* ProtocolFeedPresenter.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		86F84BEF293ABA040072D82C /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				86F84BF0293ABA520072D82C /* ExtensionFeedPresenter.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		86F84BF5293ABAC70072D82C /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				86F84BF6293ABAD80072D82C /* ProtocolFeedRouter.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		86F84BF8293ABAFD0072D82C /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				86F84C00293ABC220072D82C /* Protocols */,
-				8659FE6B294203FE00460E6E /* Cell */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		86F84BFA293ABB190072D82C /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				86F84BFC293ABB330072D82C /* ProtocolFeedViewController.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		86F84BFB293ABB1C0072D82C /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				86F84BFE293ABB3F0072D82C /* ExtensionFeedViewController.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		86F84C00293ABC220072D82C /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				86F84C01293ABC330072D82C /* ProtocolFeedTableViewCell.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		86F84C03293ABD0D0072D82C /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				86F84C04293ABD1A0072D82C /* ProtocolFeedInteractor.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		86F84C06293ABDDE0072D82C /* MonirotingNetworkManager */ = {
-			isa = PBXGroup;
-			children = (
-				86F84C0B293AC0BB0072D82C /* Protocols */,
-				86F84BEC293AA1CF0072D82C /* MonitoringNetworkManager.swift */,
-			);
-			path = MonirotingNetworkManager;
-			sourceTree = "<group>";
-		};
-		86F84C07293ABFC20072D82C /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				86F84C08293ABFCB0072D82C /* ProtocolAPIType.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		86F84C0A293ABFDE0072D82C /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				86F84C06293ABDDE0072D82C /* MonirotingNetworkManager */,
-				863301262935E8F100A1C409 /* CoreData */,
-				8690FF382935517D008CE3A2 /* API */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		86F84C0B293AC0BB0072D82C /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				86F84C0C293AC0D20072D82C /* ProtocolMonitoringNetworkManager.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1014,7 +87,7 @@
 			);
 			name = ProjectToSfera;
 			packageProductDependencies = (
-				86DF5721293957E3001DD1D3 /* Kingfisher */,
+				86EDDCE82944022200C35BDA /* MySPM */,
 			);
 			productName = ProjectToSfera;
 			productReference = 865535B3293499D90013488B /* ProjectToSfera.app */;
@@ -1061,9 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				865535C6293499DA0013488B /* LaunchScreen.storyboard in Resources */,
 				869F178B293E7BB100E8EB2B /* PropertyList.plist in Resources */,
-				865535C3293499DA0013488B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1074,88 +145,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				865535EB29349C580013488B /* MarketInteractor.swift in Sources */,
-				865912902940D0AC007769C8 /* AddingFactsInteractor.swift in Sources */,
-				864068CC2937FECB00241AF2 /* MarketTableViewCellProtocol.swift in Sources */,
-				86F84C0D293AC0D20072D82C /* ProtocolMonitoringNetworkManager.swift in Sources */,
-				865535F529349C5F0013488B /* FactsInteractor.swift in Sources */,
-				8659128F2940D0AC007769C8 /* AddingFactsViewController.swift in Sources */,
-				8643241F2943A6E2008E543D /* AddFactViewControllerProtocol.swift in Sources */,
 				865535B7293499D90013488B /* AppDelegate.swift in Sources */,
-				86F84BF1293ABA520072D82C /* ExtensionFeedPresenter.swift in Sources */,
-				86F84C02293ABC330072D82C /* ProtocolFeedTableViewCell.swift in Sources */,
-				865535E129349C4E0013488B /* FeedInteractor.swift in Sources */,
-				864324212943A719008E543D /* ExtensionViewController.swift in Sources */,
-				86307D59294371FA00DDF107 /* AddingFactModuleBuilderProtocol.swift in Sources */,
-				865535F429349C5F0013488B /* FactsViewController.swift in Sources */,
-				86307D4929436E4B00DDF107 /* FactViewControllerProtocol.swift in Sources */,
-				865535E029349C4E0013488B /* FeedViewController.swift in Sources */,
-				86F84BFD293ABB330072D82C /* ProtocolFeedViewController.swift in Sources */,
-				8659128E2940D0AC007769C8 /* AddingFactsRouter.swift in Sources */,
-				86307D4529436DA200DDF107 /* FactPresenterProtocol.swift in Sources */,
-				86F84BF7293ABAD80072D82C /* ProtocolFeedRouter.swift in Sources */,
-				864068C92937FDA600241AF2 /* MarketViewControllerProtocol.swift in Sources */,
-				865535E929349C580013488B /* MarketRouter.swift in Sources */,
-				8643242A2943A8E7008E543D /* DetailInfoCoinProtocol.swift in Sources */,
-				8659128C2940D0AC007769C8 /* AddingFactsModuleBuilder.swift in Sources */,
-				86F84BFF293ABB3F0072D82C /* ExtensionFeedViewController.swift in Sources */,
-				86F84C05293ABD1A0072D82C /* ProtocolFeedInteractor.swift in Sources */,
-				868715432938D0BB00F9BAAE /* FeedTableViewCell.swift in Sources */,
-				869F1784293E570800E8EB2B /* Facts+CoreDataProperties.swift in Sources */,
-				864068B02937EE1E00241AF2 /* UILabel+.swift in Sources */,
-				865535F129349C5F0013488B /* FactsModuleBuilder.swift in Sources */,
-				8690FF402935584B008CE3A2 /* CoinsModel.swift in Sources */,
-				86307D382943273100DDF107 /* DetailInfoCoinViewController.swift in Sources */,
-				864068D12938010500241AF2 /* MarketRouterProtocol.swift in Sources */,
-				865535DE29349C4E0013488B /* FeedPresenter.swift in Sources */,
-				865535E729349C580013488B /* MarketModuleBuilder.swift in Sources */,
-				865535EA29349C580013488B /* MarketViewController.swift in Sources */,
-				865535E829349C580013488B /* MarketPresenter.swift in Sources */,
-				868FEF76293B478400E60C80 /* FactTableViewCell.swift in Sources */,
-				8690FF3A29355265008CE3A2 /* CoreDataManager.swift in Sources */,
-				865535DF29349C4E0013488B /* FeedRouter.swift in Sources */,
-				86307D5F2943729400DDF107 /* AddingFactPresenterProtocol.swift in Sources */,
-				864068C12937FBE100241AF2 /* MainTabBarControllerProtocol.swift in Sources */,
-				864068CE2937FF9500241AF2 /* ExtensionMarketViewController.swift in Sources */,
-				864068D42938014E00241AF2 /* MarketPresenterProtocol.swift in Sources */,
-				869F1783293E570800E8EB2B /* Facts+CoreDataClass.swift in Sources */,
-				865535DD29349C4E0013488B /* FeedModuleBuilder.swift in Sources */,
-				865535D029349A800013488B /* MainTabBarController.swift in Sources */,
-				86307D542943716A00DDF107 /* FactInteractorProtocol.swift in Sources */,
-				86307D502943712800DDF107 /* FactTableViewCellProtocol.swift in Sources */,
-				86307D65294372C500DDF107 /* AddingRoterProtocol.swift in Sources */,
-				8690FF3C29355277008CE3A2 /* APIManager.swift in Sources */,
-				86BDCA3429361696007C96E0 /* MarketTableViewCell.swift in Sources */,
-				864068D72938017600241AF2 /* MarketInteractorProtocol.swift in Sources */,
-				86F84BED293AA1CF0072D82C /* MonitoringNetworkManager.swift in Sources */,
-				865535F229349C5F0013488B /* FactsPresenter.swift in Sources */,
-				864324262943A762008E543D /* AddInteractorProtocol.swift in Sources */,
-				8659128D2940D0AC007769C8 /* AddingFactsPresenter.swift in Sources */,
-				865535C1293499D90013488B /* ProjectToSfera.xcdatamodeld in Sources */,
-				863301252935E8E900A1C409 /* FeedCoinsModel.swift in Sources */,
-				865535F329349C5F0013488B /* FactsRouter.swift in Sources */,
 				865535B9293499D90013488B /* SceneDelegate.swift in Sources */,
-				86F84BF3293ABA940072D82C /* ProtocolFeedPresenter.swift in Sources */,
-				86307D4329436D6500DDF107 /* FactRoterProtocol.swift in Sources */,
-				86307D4B29436E8000DDF107 /* FactViewControllerExtension.swift in Sources */,
-				86307D3E29436CE800DDF107 /* FactExtension.swift in Sources */,
-				86F84C09293ABFCB0072D82C /* ProtocolAPIType.swift in Sources */,
-				865535D229349AE20013488B /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		865535C4293499DA0013488B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				865535C5293499DA0013488B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		865535C8293499DA0013488B /* Debug */ = {
@@ -1281,7 +276,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 59WWFG63NN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ProjectToSfera/Resources/Info.plist;
+				INFOPLIST_FILE = /Users/korotkov/Desktop/apps/ProjectToSfera/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -1312,7 +307,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 59WWFG63NN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ProjectToSfera/Resources/Info.plist;
+				INFOPLIST_FILE = /Users/korotkov/Desktop/apps/ProjectToSfera/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -1369,25 +364,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		86DF5721293957E3001DD1D3 /* Kingfisher */ = {
+		86EDDCE82944022200C35BDA /* MySPM */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 86DF5720293957E3001DD1D3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
+			productName = MySPM;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		865535BF293499D90013488B /* ProjectToSfera.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				865535C0293499D90013488B /* ProjectToSfera.xcdatamodel */,
-			);
-			currentVersion = 865535C0293499D90013488B /* ProjectToSfera.xcdatamodel */;
-			path = ProjectToSfera.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 865535AB293499D90013488B /* Project object */;
 }
