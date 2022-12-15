@@ -1,42 +1,27 @@
 //
 //  FactsViewController.swift
-//  Super easy dev
 //
 //  Created by Артём Коротков on 28.11.2022
 //
-
 import UIKit
-import CoreData
 
-class FactsViewController: UIViewController, FactsViewProtocol {
+final class FactsViewController: UIViewController, FactsViewProtocol {
     var fact: [Facts]?
     var presenter: FactsPresenterProtocol?
     var tableView = UITableView()
     var addItem: UIBarButtonItem?
-    
-    var fetchResultController: NSFetchedResultsController<NSFetchRequestResult> = {
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Facts")
-        let sortDescriptor = NSSortDescriptor(key: "title", ascending: true)
-        fetchRequest.sortDescriptors = [sortDescriptor]
-        let fetchResult = NSFetchedResultsController(fetchRequest: fetchRequest,
-                                                     managedObjectContext: CoreDataManager.shared.context,
-                                                     sectionNameKeyPath: nil, cacheName: nil)
-        return fetchResult
-    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
         setupView()
         presenter?.askToDateFromPlist()
-        presenter?.getInfoFromArray()
         configureTabBarItem()
-        presenter?.getFetch(fetchResultController: fetchResultController)
-        fetchResultController.delegate = self
+        presenter?.getFetch()
+        CoreDataManager.shared.fetchResultController.delegate = self
     }
     
     //MARK: - FUNCTIONS
-    
     func getArray(facts: [Facts]) {
         fact = facts
     }
@@ -53,7 +38,6 @@ class FactsViewController: UIViewController, FactsViewProtocol {
         addItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addFacts))
         navigationItem.rightBarButtonItem = addItem
     }
-    
     
     @objc func addFacts() {
         let navigationProfileEditVC = UINavigationController(rootViewController: AddingFactsModuleBuilder.build())

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MarketViewController: UIViewController {
+final class MarketViewController: UIViewController {
     
     let tableView = UITableView()
     var presenter: MarketPresenterProtocol?

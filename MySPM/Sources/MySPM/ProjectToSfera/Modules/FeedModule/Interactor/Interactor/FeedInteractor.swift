@@ -6,7 +6,7 @@
 //
 import UIKit
 
-class FeedInteractor: FeedInteractorProtocol {
+final class FeedInteractor: FeedInteractorProtocol {
     var networkAPIManager: APIManager?
     weak var presenter: FeedPresenterProtocol?
 

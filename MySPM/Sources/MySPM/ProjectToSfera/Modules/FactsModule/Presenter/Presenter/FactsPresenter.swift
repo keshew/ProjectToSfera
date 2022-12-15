@@ -4,8 +4,8 @@
 //
 //  Created by Артём Коротков on 28.11.2022
 //
-import CoreData
-class FactsPresenter {
+import Foundation
+final class FactsPresenter {
     weak var view: FactsViewProtocol?
     var router: FactsRouterProtocol
     var interactor: FactsInteractorProtocol
@@ -15,12 +15,8 @@ class FactsPresenter {
         self.router = router
     }
     
-    func getFetch(fetchResultController: NSFetchedResultsController<NSFetchRequestResult>) {
-        do {
-            try fetchResultController.performFetch()
-        } catch {
-            print(error)
-        }
+    func getFetch() {
+        interactor.askFetch()
     }
     
     func askToDateFromPlist() {

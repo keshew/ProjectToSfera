@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 @objc(Facts)
-public class Facts: NSManagedObject {
+final public class Facts: NSManagedObject {
     convenience init() {
         self.init(entity: CoreDataManager.shared.entityForName(entityName: "Facts"), insertInto: CoreDataManager.shared.context)
     }

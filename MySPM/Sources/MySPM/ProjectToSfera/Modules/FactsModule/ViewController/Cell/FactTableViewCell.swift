@@ -6,7 +6,7 @@
 //
 
 import UIKit
-class FactTableViewCell: UITableViewCell, FactTableViewCellProtocol {
+final class FactTableViewCell: UITableViewCell, FactTableViewCellProtocol {
     static var identifier: String {
         String(describing: self)
     }

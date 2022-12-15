@@ -14,7 +14,7 @@ let package = Package(
             targets: ["MySPM"]),
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
+        // Dependencdsadsies declare other packages that this package depends on.
         .package(url: "https://github.com/onevcat/Kingfisher", .upToNextMajor(from: "7.0.0")),
     ],
     targets: [

@@ -5,8 +5,8 @@
 //  Created by Артём Коротков on 09.12.2022.
 //
 
-import CoreData
-
+import Foundation
 protocol FactsInteractorProtocol: AnyObject {
     func getInfoFromPlistFile()
+    func askFetch()
 }

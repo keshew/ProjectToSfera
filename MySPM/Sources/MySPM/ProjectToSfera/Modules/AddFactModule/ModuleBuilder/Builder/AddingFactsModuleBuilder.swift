@@ -6,7 +6,7 @@
 //
 
 import UIKit
-class AddingFactsModuleBuilder: AddingFactsModuleBuilderProtocol {
+final class AddingFactsModuleBuilder: AddingFactsModuleBuilderProtocol {
     static func build() -> AddingFactsViewController {
         let interactor = AddingFactsInteractor()
         let router = AddingFactsRouter()

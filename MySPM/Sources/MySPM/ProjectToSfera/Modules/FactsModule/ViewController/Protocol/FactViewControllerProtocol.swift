@@ -11,7 +11,7 @@ protocol FactsViewProtocol: AnyObject {
     var fact: [Facts]? { get }
     var tableView: UITableView { get }
     var addItem: UIBarButtonItem? { get }
-    var fetchResultController: NSFetchedResultsController<NSFetchRequestResult> { get }
+//    var fetchResultController: NSFetchedResultsController<NSFetchRequestResult> { get }
     func getArray(facts: [Facts])
     func configureTableView()
     func configureTabBarItem()

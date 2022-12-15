@@ -9,7 +9,7 @@ import UIKit
 import Kingfisher
 
 
-class MarketTableViewCell: UITableViewCell, MarketTableViewCellProtocol {
+final class MarketTableViewCell: UITableViewCell, MarketTableViewCellProtocol {
     fileprivate enum Constants {
         static var padding: CGFloat = 60
     }

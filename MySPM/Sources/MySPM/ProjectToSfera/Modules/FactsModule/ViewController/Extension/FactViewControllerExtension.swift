@@ -8,6 +8,7 @@
 import UIKit
 import CoreData
 
+
 extension FactsViewController: UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate {
     
     //MARK: - NSFetchedResultsControllerDelegate
@@ -34,8 +35,8 @@ extension FactsViewController: UITableViewDataSource, UITableViewDelegate, NSFet
             }
         case .update:
             if let indexPath = indexPath {
-                self.controllerDidChangeContent(self.fetchResultController)
-                let fact = self.fetchResultController.object(at: indexPath) as! Facts
+                self.controllerDidChangeContent(CoreDataManager.shared.fetchResultController)
+                let fact = CoreDataManager.shared.fetchResultController.object(at: indexPath) as! Facts
                 let cell = self.tableView.cellForRow(at: indexPath) as! FactTableViewCell
                 cell.title.text = fact.title
                 cell.descriptison.text = fact.fact
@@ -56,7 +57,7 @@ extension FactsViewController: UITableViewDataSource, UITableViewDelegate, NSFet
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let row = fetchResultController.sections {
+        if let row = CoreDataManager.shared.fetchResultController.sections {
             return row[section].numberOfObjects
         } else {
             return 0
@@ -65,7 +66,7 @@ extension FactsViewController: UITableViewDataSource, UITableViewDelegate, NSFet
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: FactTableViewCell.identifier,for: indexPath) as? FactTableViewCell else { return UITableViewCell() }
-        let subj = fetchResultController.object(at: indexPath) as! Facts
+        let subj = CoreDataManager.shared.fetchResultController.object(at: indexPath) as! Facts
         guard let image = subj.image else { return UITableViewCell() }
         cell.title.text = subj.title
         cell.descriptison.text = subj.fact
@@ -76,11 +77,10 @@ extension FactsViewController: UITableViewDataSource, UITableViewDelegate, NSFet
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
         if editingStyle == .delete {
-            let object = self.fetchResultController.object(at: indexPath) as! Facts
+            let object = CoreDataManager.shared.fetchResultController.object(at: indexPath) as! Facts
             CoreDataManager.shared.context.delete(object)
-            CoreDataManager.shared.saveContext()
             do {
-                try  CoreDataManager.shared.context.save()
+                try CoreDataManager.shared.context.save()
             } catch {
                 print(error)
             }

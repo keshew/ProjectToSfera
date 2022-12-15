@@ -5,7 +5,8 @@
 //  Created by Артём Коротков on 07.12.2022
 //
 import UIKit
-class AddingFactsPresenter: AddingFactsPresenterProtocol {
+
+final class AddingFactsPresenter: AddingFactsPresenterProtocol {
     weak var view: AddingFactsViewProtocol?
     var router: AddingFactsRouterProtocol
     var interactor: AddingFactsInteractorProtocol

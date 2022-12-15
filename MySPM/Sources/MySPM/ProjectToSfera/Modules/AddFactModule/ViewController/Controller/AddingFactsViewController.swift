@@ -6,9 +6,8 @@
 //
 
 import UIKit
-import CoreData
 
-class AddingFactsViewController: UIViewController, AddingFactsViewProtocol {
+final class AddingFactsViewController: UIViewController, AddingFactsViewProtocol {
     var presenter: AddingFactsPresenterProtocol?
     
     var fact: Facts?

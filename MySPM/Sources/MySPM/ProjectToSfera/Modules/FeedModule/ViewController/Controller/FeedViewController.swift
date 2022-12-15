@@ -6,7 +6,7 @@
 
 import UIKit
 
-class FeedViewController: UIViewController {
+final class FeedViewController: UIViewController {
     var presenter: FeedPresenterProtocol?
     var tableView = UITableView()
     var feed: FeedCoin? {

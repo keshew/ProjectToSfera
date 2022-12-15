@@ -6,7 +6,7 @@
 //
 import UIKit
 
-class MarketPresenter: MarketPresenterProtocol {
+final class MarketPresenter: MarketPresenterProtocol {
     weak var view: MarketViewControllerProtocol?
     var router: MarketRouterProtocol
     var interactor: MarketInteractorProtocol

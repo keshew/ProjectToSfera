@@ -6,7 +6,7 @@
 //
 import UIKit
 
-class FeedPresenter {
+final class FeedPresenter {
     weak var view: FeedViewProtocol?
     var router: FeedRouterProtocol
     var interactor: FeedInteractorProtocol

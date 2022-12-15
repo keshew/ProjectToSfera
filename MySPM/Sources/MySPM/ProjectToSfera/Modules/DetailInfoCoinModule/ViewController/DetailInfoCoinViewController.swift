@@ -7,17 +7,15 @@
 
 import UIKit
 
-class DetailInfoCoinViewController: UIViewController, DetailInfoCoinViewProtocol {
+final class DetailInfoCoinViewController: UIViewController, DetailInfoCoinViewProtocol {
     
-    var coinImage: UIImageView = {
-        let image = UIImageView()
-        return image
-    }()
     var coinName: CLabel = {
         let name = CLabel(font: .systemFont(ofSize: 17, weight: .semibold), textAligments: .center)
         name.setContentHuggingPriority(.defaultHigh, for: .vertical)
         return name
     }()
+    
+    var coinImage = UIImageView()
     var coinSymbol = CLabel(font: .systemFont(ofSize: 17, weight: .semibold), textAligments: .left)
     var priceInBTC = CLabel(textAligments: .left)
     var priceInDollar = CLabel(textAligments: .left)
@@ -57,7 +55,7 @@ class DetailInfoCoinViewController: UIViewController, DetailInfoCoinViewProtocol
         priceStackView.translatesAutoresizingMaskIntoConstraints = false
         priceStackView.distribution = .fillProportionally
         priceStackView.axis = .vertical
-       
+        
         view.addSubview(infoAboutCoinStackView)
         view.addSubview(priceStackView)
         

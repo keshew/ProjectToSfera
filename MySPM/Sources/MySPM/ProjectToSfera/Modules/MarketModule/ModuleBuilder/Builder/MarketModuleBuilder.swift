@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MarketModuleBuilder {
+final class MarketModuleBuilder {
     static func build() -> MarketViewController {        
         let router = MarketRouter()
         let interactor = MarketInteractor()

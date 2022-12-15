@@ -8,7 +8,7 @@
 import UIKit
 import Kingfisher
 
-class FeedTableViewCell: UITableViewCell, ProtocolFeedTableViewCell {
+final class FeedTableViewCell: UITableViewCell, ProtocolFeedTableViewCell {
    fileprivate enum Constants {
        static var sizeImage: CGFloat = 100
         static var padding: CGFloat = 10

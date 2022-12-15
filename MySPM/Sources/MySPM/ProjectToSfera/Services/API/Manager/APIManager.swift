@@ -29,7 +29,7 @@ fileprivate enum APIType {
     }
 }
 
-class APIManager: ProtocolAPIType {
+final class APIManager: ProtocolAPIType {
     static let shared = APIManager()
     
     func getCoin(completion: @escaping (Coin) -> Void) {
@@ -55,5 +55,4 @@ class APIManager: ProtocolAPIType {
         }
         task.resume()
     }
-    
 }

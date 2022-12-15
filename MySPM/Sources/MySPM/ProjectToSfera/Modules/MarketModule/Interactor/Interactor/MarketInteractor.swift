@@ -6,7 +6,7 @@
 //
 import Foundation
 
-class MarketInteractor: MarketInteractorProtocol{
+final class MarketInteractor: MarketInteractorProtocol{
     weak var presenter: MarketPresenterProtocol?
     var networkAPIManager: APIManager?
     

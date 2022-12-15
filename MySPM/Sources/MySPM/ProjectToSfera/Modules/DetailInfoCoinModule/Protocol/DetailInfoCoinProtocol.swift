@@ -15,4 +15,6 @@ protocol DetailInfoCoinViewProtocol: AnyObject {
     var priceChange1Hour: CLabel { get }
     var priceChange1Week: CLabel { get }
     var coinRank: CLabel { get }
+    func setupView(name: String, symbol: String, rank: String, image: UIImageView)
+    func configureView()
 }

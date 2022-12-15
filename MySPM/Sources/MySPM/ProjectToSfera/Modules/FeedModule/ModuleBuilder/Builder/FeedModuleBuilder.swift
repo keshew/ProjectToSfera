@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FeedModuleBuilder {
+final class FeedModuleBuilder {
     static func build() -> FeedViewController {
         let interactor = FeedInteractor()
         let router = FeedRouter()
