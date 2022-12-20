@@ -7,7 +7,8 @@
 
 import UIKit
 
-extension FeedViewController: FeedViewProtocol, UITableViewDelegate, UITableViewDataSource {
+//MARK: - Delegate
+extension FeedViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.transform = CGAffineTransform(scaleX: 1, y: 0)
@@ -22,16 +23,12 @@ extension FeedViewController: FeedViewProtocol, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        presenter?.askToOpenURL(feed: feed!, indexPath: indexPath)
+        presenter?.askToOpenURL(indexPath: indexPath)
     }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let feed = feed?.news?.count {
-            return feed
-        } else {
-            return 0
-        }
-    }
+}
+
+//MARK: - DataSourse
+extension FeedViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: FeedTableViewCell.identifier,for: indexPath) as? FeedTableViewCell else { return UITableViewCell() }
@@ -42,5 +39,13 @@ extension FeedViewController: FeedViewProtocol, UITableViewDelegate, UITableView
             feedCoinRelated: self.feed?.news?[indexPath.row].relatedCoins?.first?.uppercased()
         )
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let feed = feed?.news?.count {
+            return feed
+        } else {
+            return 0
+        }
     }
 }

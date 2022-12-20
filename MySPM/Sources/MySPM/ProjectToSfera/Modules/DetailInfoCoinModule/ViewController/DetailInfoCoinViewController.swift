@@ -44,31 +44,26 @@ final class DetailInfoCoinViewController: UIViewController, DetailInfoCoinViewPr
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
-        view.backgroundColor = .white
     }
     
-    
     func configureView() {
+        view.backgroundColor = .white
         let infoAboutCoinStackView = UIStackView(arrangedSubviews: [coinImage,coinName,coinSymbol])
         let priceStackView = UIStackView(arrangedSubviews: [coinRank,priceInBTC,priceInDollar,priceChange1Hour,priceChange1Week])
-        infoAboutCoinStackView.translatesAutoresizingMaskIntoConstraints = false
-        priceStackView.translatesAutoresizingMaskIntoConstraints = false
+        let mainStackView = UIStackView(arrangedSubviews: [infoAboutCoinStackView,priceStackView])
+        
+        mainStackView.translatesAutoresizingMaskIntoConstraints = false
         priceStackView.distribution = .fillProportionally
         priceStackView.axis = .vertical
+        mainStackView.axis = .vertical
         
-        view.addSubview(infoAboutCoinStackView)
-        view.addSubview(priceStackView)
-        
+        view.addSubview(mainStackView)
         let margins = view.layoutMarginsGuide
         NSLayoutConstraint.activate([
-            infoAboutCoinStackView.topAnchor.constraint(equalTo: margins.topAnchor,constant: 20),
-            infoAboutCoinStackView.leadingAnchor.constraint(equalTo: margins.leadingAnchor),
-            margins.trailingAnchor.constraint(equalTo: infoAboutCoinStackView.trailingAnchor),
-            priceStackView.topAnchor.constraint(equalTo:  infoAboutCoinStackView.bottomAnchor,constant: 10),
-            
-            priceStackView.leadingAnchor.constraint(equalTo: margins.leadingAnchor),
-            margins.trailingAnchor.constraint(equalTo: priceStackView.trailingAnchor),
-            margins.bottomAnchor.constraint(equalTo: priceStackView.bottomAnchor),
+            mainStackView.topAnchor.constraint(equalTo: margins.topAnchor,constant: 20),
+            mainStackView.leadingAnchor.constraint(equalTo: margins.leadingAnchor),
+            margins.trailingAnchor.constraint(equalTo: mainStackView.trailingAnchor),
+            margins.bottomAnchor.constraint(equalTo:  mainStackView.bottomAnchor,constant: 10),
             
             coinImage.widthAnchor.constraint(equalToConstant: 50),
             coinImage.heightAnchor.constraint(equalToConstant: 50)

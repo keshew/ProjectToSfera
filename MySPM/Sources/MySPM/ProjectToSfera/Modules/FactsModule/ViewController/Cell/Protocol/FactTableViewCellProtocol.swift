@@ -13,5 +13,5 @@ protocol FactTableViewCellProtocol {
     var imageOfCoin: UIImageView { get }
     var title: CLabel { get }
     func configureStackView()
-    func setupStackView()
+    func setupView()
 }

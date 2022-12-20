@@ -7,9 +7,25 @@
 
 import UIKit
 
-extension MarketViewController: MarketViewControllerProtocol, UITableViewDelegate, UITableViewDataSource {
+//MARK: - DataSourse
+extension MarketViewController: UITableViewDataSource {
     
-    //MARK: - TableView
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: MarketTableViewCell.identifier, for: indexPath) as? MarketTableViewCell else { return UITableViewCell() }
+        guard let coin = self.coin.coins?[indexPath.row] else { return UITableViewCell() }
+        guard let priceDay = coin.priceChange1D else { return UITableViewCell() }
+        guard let price = coin.price else { return UITableViewCell() }
+        cell.configureCell(
+            coinIcon: coin.icon,
+            coinName: coin.symbol,
+            coinPrice: String(describing: price),
+            coinPositionInTable: String(describing: indexPath.row + 1),
+            coinPriceInDay: String("\((priceDay))\("%")")
+        )
+        return cell
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let feed = coin.coins?.count {
             return feed
@@ -17,34 +33,28 @@ extension MarketViewController: MarketViewControllerProtocol, UITableViewDelegat
             return 0
         }
     }
+}
+//MARK: - Delegate
+extension MarketViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let viewController = DetailInfoCoinViewController(coinUrl: (self.coin.coins?[indexPath.row].icon!)!,
-                                              coinName: (self.coin.coins?[indexPath.row].name!)!,
-                                              coinSymbol: (self.coin.coins?[indexPath.row].symbol!)!,
-                                              coinRank: String(describing: self.coin.coins![indexPath.row].rank!),
-                                              priceBTC: String(describing: self.coin.coins![indexPath.row].priceBtc!),
-                                              priceDollar: String(describing: self.coin.coins![indexPath.row].price!),
-                                              priceChange1Hour: String(describing: self.coin.coins![indexPath.row].priceChange1H!),
-                                              priceChange1Week: String(describing: self.coin.coins![indexPath.row].priceChange1W!))
-       present(viewController, animated: true)
+        guard let coin = self.coin.coins?[indexPath.row] else { return }
+        let viewController = DetailInfoCoinViewController(coinUrl: (coin.icon ?? ""),
+                                                          coinName: (coin.name ?? "No name"),
+                                                          coinSymbol: (coin.symbol ?? "No symbol"),
+                                                          coinRank: String(describing: coin.rank ?? 0),
+                                                          priceBTC: String(describing: coin.priceBtc ?? 0),
+                                                          priceDollar: String(describing: coin.price ?? 0),
+                                                          priceChange1Hour: String(describing: coin.priceChange1H ?? 0),
+                                                          priceChange1Week: String(describing: coin.priceChange1W ?? 0))
+        present(viewController, animated: true)
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: MarketTableViewCell.identifier, for: indexPath) as? MarketTableViewCell else { return UITableViewCell() }
-        guard let path = self.coin.coins?[indexPath.row] else { return UITableViewCell() }
-        cell.configureCell(
-            coinIcon: path.icon,
-            coinName: path.symbol,
-            coinPrice: String(describing: path.price!),
-            coinPositionInTable: String(describing: indexPath.row + 1),
-            coinPriceInDay: String("\((path.priceChange1D!))\("%")")
-        )
-        return cell
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44
     }
     
-    //MARK: - Animation
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.transform = CGAffineTransform(scaleX: 0, y: 1)
         UIView.animate(withDuration: 0.5) {
@@ -52,3 +62,4 @@ extension MarketViewController: MarketViewControllerProtocol, UITableViewDelegat
         }
     }
 }
+

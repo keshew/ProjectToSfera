@@ -1,13 +1,12 @@
 //
 //  MarketModuleBuilder.swift
-//  Super easy dev
-//
+
 //  Created by Артём Коротков on 28.11.2022
 //
 
 import UIKit
 
-final class MarketModuleBuilder {
+final class MarketModuleBuilder: MarketModuleBuilderProtocol {
     static func build() -> MarketViewController {        
         let router = MarketRouter()
         let interactor = MarketInteractor()

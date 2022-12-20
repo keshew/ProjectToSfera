@@ -1,11 +1,10 @@
 //
 //  FactsPresenter.swift
-//  Super easy dev
-//
 //  Created by Артём Коротков on 28.11.2022
 //
 import Foundation
 final class FactsPresenter {
+    
     weak var view: FactsViewProtocol?
     var router: FactsRouterProtocol
     var interactor: FactsInteractorProtocol
@@ -22,6 +21,8 @@ final class FactsPresenter {
     func askToDateFromPlist() {
         interactor.getInfoFromPlistFile()
     }
+    
+   
 }
 
 

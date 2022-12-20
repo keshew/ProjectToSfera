@@ -7,6 +7,6 @@
 
 import UIKit
 protocol AddingFactsPresenterProtocol: AnyObject {
-    func setInfoCoreDate(image: UIImage, textOfField: String, textOfView: String)
+    func setInfoCoreDate(textOfField: String, textOfView: String)
     func placeHolderTexteView(textView: UITextView)
 }

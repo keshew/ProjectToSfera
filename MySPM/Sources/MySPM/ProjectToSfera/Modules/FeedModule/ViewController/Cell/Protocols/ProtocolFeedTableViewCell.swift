@@ -16,6 +16,8 @@ protocol ProtocolFeedTableViewCell {
     var feedCoinRelated: CLabel { get }
     var feedIcon: UIImageView { get }
     
+    func setupView()
     func configureStackView()
     func configureCell(feedIcon: String?, feedTitle: String?, feedSource: String?, feedCoinRelated: String?)
+    
 }

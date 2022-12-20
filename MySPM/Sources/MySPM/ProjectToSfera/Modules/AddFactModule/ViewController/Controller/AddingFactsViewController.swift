@@ -8,9 +8,9 @@
 import UIKit
 
 final class AddingFactsViewController: UIViewController, AddingFactsViewProtocol {
+    
     var presenter: AddingFactsPresenterProtocol?
     
-    var fact: Facts?
     var stackView = UIStackView()
     var titleTextField: UITextField = {
         let text = UITextField()
@@ -31,7 +31,7 @@ final class AddingFactsViewController: UIViewController, AddingFactsViewProtocol
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureView()
+        setupView()
         saveNavigationItem()
         cancelNavigationItem()
         configureStackView()
@@ -58,10 +58,9 @@ final class AddingFactsViewController: UIViewController, AddingFactsViewProtocol
     }
     
     @objc func saveInfo() {
-        guard let image = UIImage(named: "test", in: .module, compatibleWith: nil) else { return }
-        presenter?.setInfoCoreDate(image: image, textOfField: titleTextField.text!, textOfView: factTextView.text)
+        guard let textFieldText = titleTextField.text else { return }
+        presenter?.setInfoCoreDate(textOfField: textFieldText, textOfView: factTextView.text)
         dismiss(animated: true)
-        
     }
     
     func cancelNavigationItem() {
@@ -77,11 +76,18 @@ final class AddingFactsViewController: UIViewController, AddingFactsViewProtocol
         dismiss(animated: true)
     }
     
-    func configureView() {
+    func configureStackView() {
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.spacing = 20
+    }
+    
+    func setupView() {
         title = "Новый факт"
         view.backgroundColor = .white
         stackView = UIStackView(arrangedSubviews: [titleTextField, factTextView])
         view.addSubview(stackView)
+        
         let margins = view.layoutMarginsGuide
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: margins.topAnchor,constant: 20),
@@ -89,12 +95,6 @@ final class AddingFactsViewController: UIViewController, AddingFactsViewProtocol
             margins.trailingAnchor.constraint(equalTo: stackView.trailingAnchor),
             margins.bottomAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 10)
         ])
-    }
-    
-    func configureStackView() {
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = .vertical
-        stackView.spacing = 20
     }
 }
 

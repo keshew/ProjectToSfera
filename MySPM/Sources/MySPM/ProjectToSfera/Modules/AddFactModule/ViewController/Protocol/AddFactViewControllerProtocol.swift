@@ -16,6 +16,6 @@ protocol AddingFactsViewProtocol: AnyObject {
     func saveInfo()
     func cancelNavigationItem()
     func cancelButton()
-    func configureView()
+    func setupView()
     func configureStackView()
 }

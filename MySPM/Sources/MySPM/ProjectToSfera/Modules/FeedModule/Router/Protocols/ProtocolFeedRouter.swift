@@ -8,5 +8,5 @@
 import Foundation
 
 protocol FeedRouterProtocol {
-    func openURL(feed: FeedCoin, indexPath: IndexPath)
+    func openURL(url: URL)
 }

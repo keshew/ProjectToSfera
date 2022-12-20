@@ -5,7 +5,7 @@
 //  Created by Артём Коротков on 09.12.2022.
 //
 
-import UIKit
+import Foundation
 protocol AddingFactsInteractorProtocol: AnyObject {
-    func gotInfoFromPresenter(image: UIImage, textOfField: String, textOfView: String)
+    func gotInfoFromPresenter(textOfField: String, textOfView: String)
 }

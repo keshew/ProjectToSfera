@@ -11,6 +11,7 @@ import Network
 final public class MonitoringNetworkManager: ProtocolMonitoringNetworkManager {
     
     static public let shared = MonitoringNetworkManager()
+
     let queue = DispatchQueue.global()
     let monitor: NWPathMonitor
     public private(set) var isConnected: Bool = false
@@ -28,5 +29,13 @@ final public class MonitoringNetworkManager: ProtocolMonitoringNetworkManager {
     
     public func endMonitoring() {
         monitor.cancel()
+    }
+    
+    func checkConnection() -> Bool {
+        var boolValue = true
+        if isConnected == false {
+           boolValue = false
+        }
+        return boolValue
     }
 }

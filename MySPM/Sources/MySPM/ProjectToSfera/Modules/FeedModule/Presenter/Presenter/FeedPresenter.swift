@@ -1,10 +1,9 @@
 //
 //  FeedPresenter.swift
-//  Super easy dev
 //
 //  Created by Артём Коротков on 28.11.2022
 //
-import UIKit
+import Foundation
 
 final class FeedPresenter {
     weak var view: FeedViewProtocol?
@@ -20,8 +19,10 @@ final class FeedPresenter {
         view?.getInfoAboutFeed(feed: feed)
     }
     
-    func askToOpenURL(feed: FeedCoin, indexPath: IndexPath) {
-        router.openURL(feed: feed, indexPath: indexPath)
+    func askToOpenURL(indexPath: IndexPath) {
+        guard let urlString = view?.feed?.news?[indexPath.row].link else { return }
+        guard let url = URL(string: urlString) else { return }
+        router.openURL(url: url)
     }
 
     func viewDidLoaded() {

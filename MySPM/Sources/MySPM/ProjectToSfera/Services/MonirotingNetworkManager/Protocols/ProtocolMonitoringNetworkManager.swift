@@ -13,4 +13,5 @@ protocol ProtocolMonitoringNetworkManager {
     var queue: DispatchQueue { get }
     var monitor: NWPathMonitor { get }
     var isConnected: Bool { get }
+    func checkConnection() -> Bool
 }

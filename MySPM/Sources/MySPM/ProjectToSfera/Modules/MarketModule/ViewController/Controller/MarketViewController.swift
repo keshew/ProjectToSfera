@@ -7,10 +7,11 @@
 
 import UIKit
 
-final class MarketViewController: UIViewController {
+final class MarketViewController: UIViewController, MarketViewControllerProtocol {
+    
+    var presenter: MarketPresenterProtocol?
     
     let tableView = UITableView()
-    var presenter: MarketPresenterProtocol?
     var sortingItemBar: UIBarButtonItem?
     var coin: Coin = Coin(coins: [CoinElement]()) {
         didSet {

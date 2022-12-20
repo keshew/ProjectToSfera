@@ -6,7 +6,6 @@
 import UIKit
 
 final class FactsViewController: UIViewController, FactsViewProtocol {
-    var fact: [Facts]?
     var presenter: FactsPresenterProtocol?
     var tableView = UITableView()
     var addItem: UIBarButtonItem?
@@ -17,13 +16,12 @@ final class FactsViewController: UIViewController, FactsViewProtocol {
         setupView()
         presenter?.askToDateFromPlist()
         configureTabBarItem()
-        presenter?.getFetch()
-        CoreDataManager.shared.fetchResultController.delegate = self
     }
     
-    //MARK: - FUNCTIONS
-    func getArray(facts: [Facts]) {
-        fact = facts
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter?.getFetch()
+        tableView.reloadData()
     }
     
     func configureTableView() {
@@ -41,14 +39,16 @@ final class FactsViewController: UIViewController, FactsViewProtocol {
     
     @objc func addFacts() {
         let navigationProfileEditVC = UINavigationController(rootViewController: AddingFactsModuleBuilder.build())
+        navigationProfileEditVC.modalPresentationStyle = .fullScreen
+        navigationProfileEditVC.modalTransitionStyle = .crossDissolve
         present(navigationProfileEditVC, animated: true)
+        
     }
     
     func setupView() {
-        //dymanic height
+        //dymanic height(2)
         tableView.estimatedRowHeight = 450
         tableView.rowHeight = UITableView.automaticDimension
-        
         tableView.separatorStyle = .none
         
         navigationItem.title = "Факты"

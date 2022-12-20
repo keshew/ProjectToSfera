@@ -5,7 +5,7 @@
 //  Created by Артём Коротков on 07.12.2022
 //
 
-import UIKit
+import Foundation
 final class AddingFactsModuleBuilder: AddingFactsModuleBuilderProtocol {
     static func build() -> AddingFactsViewController {
         let interactor = AddingFactsInteractor()

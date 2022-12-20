@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class FactsModuleBuilder {
+final class FactsModuleBuilder: FactModuleBuilderProtocol {
     static func build() -> FactsViewController {
         let interactor = FactsInteractor()
         let router = FactsRouter()

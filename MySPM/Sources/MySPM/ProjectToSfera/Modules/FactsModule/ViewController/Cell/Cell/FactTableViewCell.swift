@@ -6,13 +6,16 @@
 //
 
 import UIKit
+
 final class FactTableViewCell: UITableViewCell, FactTableViewCellProtocol {
+    
     static var identifier: String {
         String(describing: self)
     }
     
     var stackView = UIStackView()
     var descriptison = CLabel(numberOfLines: 0)
+    
     var imageOfCoin: UIImageView = {
         let image = UIImageView()
         image.clipsToBounds = true
@@ -28,6 +31,9 @@ final class FactTableViewCell: UITableViewCell, FactTableViewCellProtocol {
     }()
     
     func configureStackView() {
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.spacing = 10
         stackView.backgroundColor = .white
         //corner
         stackView.layer.maskedCorners = [ .layerMinXMaxYCorner, .layerMaxXMaxYCorner]
@@ -44,7 +50,7 @@ final class FactTableViewCell: UITableViewCell, FactTableViewCellProtocol {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        setupStackView()
+        setupView()
         configureStackView()
     }
     
@@ -52,15 +58,12 @@ final class FactTableViewCell: UITableViewCell, FactTableViewCellProtocol {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupStackView() {
+    func setupView() {
         stackView = UIStackView(arrangedSubviews: [title,descriptison])
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = .vertical
-        stackView.spacing = 10
         addSubview(imageOfCoin)
         addSubview(stackView)
         let margins = layoutMarginsGuide
-        
+
         let imageToTopMatginConstaint = imageOfCoin.topAnchor.constraint(equalTo: margins.topAnchor)
         imageToTopMatginConstaint.priority = UILayoutPriority(999)
         

@@ -60,6 +60,7 @@ final class FeedTableViewCell: UITableViewCell, ProtocolFeedTableViewCell {
             feedIcon.widthAnchor.constraint(equalToConstant: Constants.sizeImage),
             feedIcon.leadingAnchor.constraint(equalTo: margins.leadingAnchor,constant: Constants.padding / 2),
             feedIcon.topAnchor.constraint(equalTo: contentView.topAnchor,constant: Constants.padding),
+            
             mainStackView.leadingAnchor.constraint(equalTo: feedIcon.trailingAnchor, constant: Constants.padding * 2),
             margins.trailingAnchor.constraint(equalTo: mainStackView.trailingAnchor),
             mainStackView.topAnchor.constraint(equalTo: contentView.topAnchor,constant: 8),
@@ -79,8 +80,9 @@ final class FeedTableViewCell: UITableViewCell, ProtocolFeedTableViewCell {
     }
 
     func configureCell(feedIcon: String?, feedTitle: String?, feedSource: String?, feedCoinRelated: String?) {
+        guard let icon = feedIcon else { return }
         self.feedIcon.kf.indicatorType = .activity
-        self.feedIcon.kf.setImage(with: URL(string: feedIcon!), placeholder: UIImage(named: "defaultCoin", in: .module, compatibleWith: nil))
+        self.feedIcon.kf.setImage(with: URL(string: icon), placeholder: UIImage(named: "defaultCoin", in: .module, compatibleWith: nil))
         self.feedTitle.text =  feedTitle ?? "No title"
         self.feedSource.text = feedSource ?? "No source"
         self.feedCoinRelated.text = feedCoinRelated ?? "No coin related"

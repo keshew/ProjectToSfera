@@ -6,9 +6,11 @@
 
 import UIKit
 
-final class FeedViewController: UIViewController {
+final class FeedViewController: UIViewController, FeedViewProtocol {
+    
     var presenter: FeedPresenterProtocol?
     var tableView = UITableView()
+    
     var feed: FeedCoin? {
         didSet {
             tableView.reloadData()
@@ -24,9 +26,16 @@ final class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoaded()
-        presenter?.askToCheckInternetConnection(view: self,table: tableView)
+        presenter?.askToCheckInternetConnection()
         configureTableView()
         setupContent()
+    }
+    
+    func showAlert() {
+       let alert = UIAlertController(title: "Проблемы с интернет подключением",
+                                     message: "Пожалуйста проверьте поключение к интернету и попробуйте снова",
+                                     preferredStyle: .alert)
+       present(alert, animated: true)
     }
     
     //MARK: - SETUP VIEW

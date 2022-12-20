@@ -7,11 +7,13 @@
 import Foundation
 
 final class FactsInteractor: FactsInteractorProtocol {
+    
     weak var presenter: FactsPresenterProtocol?
+    
     func getInfoFromPlistFile() {
         CoreDataManager.shared.infoPlistFile()
     }
     func askFetch() {
-        CoreDataManager.shared.getFetch() 
+        CoreDataManager.shared.fetchRequest()
     }
 }

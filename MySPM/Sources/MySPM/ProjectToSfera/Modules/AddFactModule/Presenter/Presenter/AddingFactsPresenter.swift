@@ -7,6 +7,7 @@
 import UIKit
 
 final class AddingFactsPresenter: AddingFactsPresenterProtocol {
+    
     weak var view: AddingFactsViewProtocol?
     var router: AddingFactsRouterProtocol
     var interactor: AddingFactsInteractorProtocol
@@ -24,8 +25,8 @@ final class AddingFactsPresenter: AddingFactsPresenterProtocol {
         }
     }
     
-    func setInfoCoreDate(image: UIImage, textOfField: String, textOfView: String) {
-        interactor.gotInfoFromPresenter(image: image, textOfField: textOfField, textOfView: textOfView)
+    func setInfoCoreDate(textOfField: String, textOfView: String) {
+        interactor.gotInfoFromPresenter(textOfField: textOfField, textOfView: textOfView)
     }
 }
 
