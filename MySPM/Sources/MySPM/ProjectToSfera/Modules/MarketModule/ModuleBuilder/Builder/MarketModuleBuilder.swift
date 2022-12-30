@@ -11,7 +11,7 @@ final class MarketModuleBuilder: MarketModuleBuilderProtocol {
         let router = MarketRouter()
         let interactor = MarketInteractor()
         let presenter = MarketPresenter(interactor: interactor, router: router)
-        let viewController = MarketViewController()
+        let viewController = MarketViewController(presenter: presenter)
         presenter.view = viewController
         viewController.presenter = presenter
         interactor.presenter = presenter

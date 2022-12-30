@@ -22,8 +22,15 @@ fileprivate enum APIType {
         return "https://api.coinstats.app/public/v1/"
     }
     
+    var url: URL {
+        let url = URL(string: path, relativeTo: URL(string: baseURL))
+        if let url2 = url {
+            return url2
+        }
+        return self.url
+    }
+    
     var request: URLRequest {
-        let url = URL(string: path, relativeTo: URL(string: baseURL)!)!
         let request = URLRequest(url: url)
         return request
     }

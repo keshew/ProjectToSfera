@@ -8,6 +8,7 @@
 import Foundation
 
 protocol MarketInteractorProtocol: AnyObject {
+    var apiManager: APIManager { get }
     func getCoinInfoFromNetwork()
 }
 

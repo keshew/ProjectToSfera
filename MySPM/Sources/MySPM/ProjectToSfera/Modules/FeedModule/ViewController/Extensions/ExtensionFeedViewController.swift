@@ -32,17 +32,18 @@ extension FeedViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: FeedTableViewCell.identifier,for: indexPath) as? FeedTableViewCell else { return UITableViewCell() }
+        let feed = viewModel?.feed
         cell.configureCell(
-            feedIcon: self.feed?.news?[indexPath.row].imgURL,
-            feedTitle: self.feed?.news?[indexPath.row].title,
-            feedSource: self.feed?.news?[indexPath.row].source ,
-            feedCoinRelated: self.feed?.news?[indexPath.row].relatedCoins?.first?.uppercased()
+            feedIcon: feed?.news?[indexPath.row].imgURL,
+            feedTitle: feed?.news?[indexPath.row].title,
+            feedSource: feed?.news?[indexPath.row].source ,
+            feedCoinRelated: feed?.news?[indexPath.row].relatedCoins?.first?.uppercased()
         )
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let feed = feed?.news?.count {
+        if let feed = viewModel?.feed?.news?.count {
             return feed
         } else {
             return 0

@@ -7,7 +7,7 @@
 
 import UIKit
 
-final public class MainTabBarController: UITabBarController, MainTabBarControllerProtocol {
+final public class MainTabBarController: UITabBarController {
     
      public override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,7 +15,7 @@ final public class MainTabBarController: UITabBarController, MainTabBarControlle
         setTabBarAppearance()
     }
 
-    func generateTabBar() {
+   private func generateTabBar() {
         setViewControllers([
             generateViewControllers(
                 viewController: UINavigationController(rootViewController: FeedModuleBuilder.build()),
@@ -33,13 +33,13 @@ final public class MainTabBarController: UITabBarController, MainTabBarControlle
         ],animated: true)
     }
     
-    func generateViewControllers(viewController: UINavigationController, title: String, image: UIImage?) -> UIViewController { 
+    private func generateViewControllers(viewController: UINavigationController, title: String, image: UIImage?) -> UIViewController {
         viewController.tabBarItem.title = title
         viewController.tabBarItem.image = image
         return viewController
     }
     
-    func setTabBarAppearance() {
+    private func setTabBarAppearance() {
         tabBar.itemPositioning = .centered
         
         tabBar.tintColor = .mainBlueColor

@@ -12,7 +12,7 @@ final class FeedModuleBuilder: FeedModuleBuilderProtocol {
         let interactor = FeedInteractor()
         let router = FeedRouter()
         let presenter = FeedPresenter(interactor: interactor, router: router)
-        let viewController = FeedViewController()
+        let viewController = FeedViewController(presenter: presenter)
         presenter.view  = viewController
         viewController.presenter = presenter
         interactor.presenter = presenter

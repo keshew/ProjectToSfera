@@ -16,11 +16,15 @@ final class FeedPresenter {
     }
     
     func didLoadInfoAboutFeed(feed: FeedCoin) {
-        view?.getInfoAboutFeed(feed: feed)
+        DispatchQueue.main.async {
+            self.view?.viewModel = FeedViewModel()
+            self.view?.viewModel?.feed = feed
+            self.view?.tableView.reloadData()
+        }
     }
     
     func askToOpenURL(indexPath: IndexPath) {
-        guard let urlString = view?.feed?.news?[indexPath.row].link else { return }
+        guard let urlString = view?.viewModel?.feed?.news?[indexPath.row].link else { return }
         guard let url = URL(string: urlString) else { return }
         router.openURL(url: url)
     }

@@ -8,7 +8,7 @@
 import UIKit
 import Kingfisher
 
-final class FeedTableViewCell: UITableViewCell, ProtocolFeedTableViewCell {
+final class FeedTableViewCell: UITableViewCell {
    fileprivate enum Constants {
        static var sizeImage: CGFloat = 100
         static var padding: CGFloat = 10
@@ -21,14 +21,14 @@ final class FeedTableViewCell: UITableViewCell, ProtocolFeedTableViewCell {
     
     //MARK: - UIElements
     
-    var titleStackView = UIStackView()
-    var coinInfoStackView = UIStackView()
-    var mainStackView = UIStackView()
-    var feedTitle = CLabel(font: .systemFont(ofSize: 17,weight: .bold), numberOfLines: 0)
-    var feedSource = CLabel(font: .systemFont(ofSize: Constants.smallFontSize, weight: .light), textColor: .coinSourceColor)
-    var feedCoinRelated = CLabel(font: .systemFont(ofSize: Constants.smallFontSize, weight: .regular), textColor: .coinRelatedColor)
+    private var titleStackView = UIStackView()
+    private var coinInfoStackView = UIStackView()
+    private var mainStackView = UIStackView()
+    private var feedTitle = CLabel(font: .systemFont(ofSize: 17,weight: .bold), numberOfLines: 0)
+    private var feedSource = CLabel(font: .systemFont(ofSize: Constants.smallFontSize, weight: .light), textColor: .coinSourceColor)
+    private var feedCoinRelated = CLabel(font: .systemFont(ofSize: Constants.smallFontSize, weight: .regular), textColor: .coinRelatedColor)
     
-    var feedIcon: UIImageView = {
+    private var feedIcon: UIImageView = {
         let icon = UIImageView()
         icon.contentMode = .scaleToFill
         icon.translatesAutoresizingMaskIntoConstraints = false
@@ -51,7 +51,7 @@ final class FeedTableViewCell: UITableViewCell, ProtocolFeedTableViewCell {
     
     //MARK: - Func
     
-    func setupView() {
+    private func setupView() {
         contentView.addSubview(feedIcon)
         contentView.addSubview(mainStackView)
         let margins = layoutMarginsGuide
@@ -67,7 +67,7 @@ final class FeedTableViewCell: UITableViewCell, ProtocolFeedTableViewCell {
             margins.bottomAnchor.constraint(equalTo: mainStackView.bottomAnchor)])
     }
     
-    func configureStackView() {
+    private func configureStackView() {
         titleStackView = UIStackView(arrangedSubviews: [feedTitle])
         coinInfoStackView = UIStackView(arrangedSubviews: [feedCoinRelated,feedSource])
         mainStackView = UIStackView(arrangedSubviews: [titleStackView,coinInfoStackView])
@@ -79,7 +79,7 @@ final class FeedTableViewCell: UITableViewCell, ProtocolFeedTableViewCell {
         coinInfoStackView.spacing = Constants.padding
     }
 
-    func configureCell(feedIcon: String?, feedTitle: String?, feedSource: String?, feedCoinRelated: String?) {
+     func configureCell(feedIcon: String?, feedTitle: String?, feedSource: String?, feedCoinRelated: String?) {
         guard let icon = feedIcon else { return }
         self.feedIcon.kf.indicatorType = .activity
         self.feedIcon.kf.setImage(with: URL(string: icon), placeholder: UIImage(named: "defaultCoin", in: .module, compatibleWith: nil))

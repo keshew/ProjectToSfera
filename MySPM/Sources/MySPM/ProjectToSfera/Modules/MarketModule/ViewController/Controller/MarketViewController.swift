@@ -9,14 +9,17 @@ import UIKit
 
 final class MarketViewController: UIViewController, MarketViewControllerProtocol {
     
+    var viewModel: ProtocolCoinViewModel?
     var presenter: MarketPresenterProtocol?
-    
     let tableView = UITableView()
-    var sortingItemBar: UIBarButtonItem?
-    var coin: Coin = Coin(coins: [CoinElement]()) {
-        didSet {
-            tableView.reloadData()
-        }
+    
+    init(presenter: MarketPresenterProtocol?) {
+        self.presenter = presenter
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     override func viewDidLoad() {
@@ -24,12 +27,6 @@ final class MarketViewController: UIViewController, MarketViewControllerProtocol
         presenter?.viewDidLoaded()
         configureTableView()
         setupContent()
-    }
-    
-    func getInfoAboutCoins(coin: Coin) {
-        DispatchQueue.main.async {
-            self.coin = coin
-        }
     }
     
     //MARK: - SETUP VIEW

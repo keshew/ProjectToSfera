@@ -8,19 +8,17 @@ import UIKit
 
 final class FeedViewController: UIViewController, FeedViewProtocol {
     
+    var viewModel: ProtocolFeedViewModel?
     var presenter: FeedPresenterProtocol?
     var tableView = UITableView()
     
-    var feed: FeedCoin? {
-        didSet {
-            tableView.reloadData()
-        }
+    init(presenter: FeedPresenterProtocol?) {
+        self.presenter = presenter
+        super.init(nibName: nil, bundle: nil)
     }
     
-    func getInfoAboutFeed(feed: FeedCoin) {
-        DispatchQueue.main.async {
-            self.feed = feed
-        }
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     override func viewDidLoad() {

@@ -9,7 +9,7 @@ import UIKit
 import Kingfisher
 
 
-final class MarketTableViewCell: UITableViewCell, MarketTableViewCellProtocol {
+final class MarketTableViewCell: UITableViewCell {
     fileprivate enum Constants {
         static var padding: CGFloat = 60
     }
@@ -19,17 +19,17 @@ final class MarketTableViewCell: UITableViewCell, MarketTableViewCellProtocol {
     }
     
     //MARK: - UIElements
-    var cellStackView = UIStackView()
-    let coinIcon = UIImageView()
-    let coinPositionInTable = CLabel()
-    let coinName = CLabel(font: .systemFont(ofSize: 17,weight: .bold))
+    private var cellStackView = UIStackView()
+    private let coinIcon = UIImageView()
+    private let coinPositionInTable = CLabel()
+    private let coinName = CLabel(font: .systemFont(ofSize: 17,weight: .bold))
     
-    let coinPrice: CLabel = {
+    private let coinPrice: CLabel = {
         var coin = CLabel(font: .systemFont(ofSize: 15), textAligments: .center)
         coin.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         return coin
     }()
-    let coinPriceChange1Day: CLabel = {
+    private let coinPriceChange1Day: CLabel = {
         let price = CLabel(font: .systemFont(ofSize: 12,weight: .bold), textAligments: .center)
         price.layer.masksToBounds = true
         price.layer.cornerRadius = 10
@@ -61,14 +61,14 @@ final class MarketTableViewCell: UITableViewCell, MarketTableViewCellProtocol {
         fatalError("init(coder:) has not been implemented")
     }
     //MARK: - Func
-    func createStackView() {
+    private func createStackView() {
         cellStackView = UIStackView(arrangedSubviews: [coinPositionInTable,coinIcon,coinName,coinPrice,coinPriceChange1Day])
         cellStackView.translatesAutoresizingMaskIntoConstraints = false
         cellStackView.spacing = 10
         contentView.addSubview(cellStackView)
     }
     
-    func hasPrefix(text: String) -> String {
+    private func hasPrefix(text: String) -> String {
         if text.hasPrefix("-") {
             coinPriceChange1Day.textColor = .minusTextColor
             coinPriceChange1Day.backgroundColor = .minusBackgroundColor

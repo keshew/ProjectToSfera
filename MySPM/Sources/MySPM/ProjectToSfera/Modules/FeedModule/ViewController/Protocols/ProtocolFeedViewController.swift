@@ -9,8 +9,7 @@ import UIKit
 
 protocol FeedViewProtocol: AnyObject {
     var tableView: UITableView { get }
-    var feed: FeedCoin? { get }
-    func getInfoAboutFeed(feed: FeedCoin)
+    var viewModel: ProtocolFeedViewModel? { get set }
     func showAlert()
     func configureTableView()
     func setupContent()

@@ -8,15 +8,12 @@ import Foundation
 final class MarketInteractor: MarketInteractorProtocol {
     
     weak var presenter: MarketPresenterProtocol?
+    var apiManager = APIManager()
     
     func getCoinInfoFromNetwork() {
-        APIManager.shared.getCoin(completion: { [weak self] coin in
+        apiManager.getCoin(completion: { [weak self] coin in
             guard let self = self else { return }
             self.presenter?.didLoadInfoAboutCoins(coin: coin)
         })
     }
 }
-
-
-
-

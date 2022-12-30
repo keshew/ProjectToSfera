@@ -8,9 +8,10 @@ import Foundation
 final class FeedInteractor: FeedInteractorProtocol {
     
     weak var presenter: FeedPresenterProtocol?
+    var apiManager = APIManager()
 
     func getFeedInfoFromNetwork() {
-        APIManager.shared.getFeedCoin(completion: { [weak self] feed in
+        apiManager.getFeedCoin(completion: { [weak self] feed in
             guard let self = self else { return }
             self.presenter?.didLoadInfoAboutFeed(feed: feed)
         })

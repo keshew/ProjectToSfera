@@ -24,6 +24,7 @@ final class CoreDataManager {
         newFact.image = UIImage(named: "test", in: .module, compatibleWith: nil)?.pngData()
         newFact.title = textOfField
         newFact.fact = textOfView
+        
         do {
             try context.save()
         } catch {
@@ -32,6 +33,8 @@ final class CoreDataManager {
     }
     
     func fetchRequest() {
+        let sectionSortDescriptor = NSSortDescriptor(key: #keyPath(Facts.fact), ascending: false)
+        request.sortDescriptors = [sectionSortDescriptor]
         do {
             fact = try context.fetch(request)
         } catch {

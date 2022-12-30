@@ -8,6 +8,7 @@
 import Foundation
 
 protocol FeedInteractorProtocol: AnyObject {
+    var apiManager: APIManager { get }
     func getFeedInfoFromNetwork()
     func checkInternetConnection() -> Bool
 }

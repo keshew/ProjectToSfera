@@ -13,7 +13,7 @@ extension MarketViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: MarketTableViewCell.identifier, for: indexPath) as? MarketTableViewCell else { return UITableViewCell() }
-        guard let coin = self.coin.coins?[indexPath.row] else { return UITableViewCell() }
+        guard let coin = viewModel?.coin.coins?[indexPath.row] else { return UITableViewCell() }
         guard let priceDay = coin.priceChange1D else { return UITableViewCell() }
         guard let price = coin.price else { return UITableViewCell() }
         cell.configureCell(
@@ -27,7 +27,7 @@ extension MarketViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let feed = coin.coins?.count {
+        if let feed = viewModel?.coin.coins?.count {
             return feed
         } else {
             return 0
@@ -39,7 +39,7 @@ extension MarketViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        guard let coin = self.coin.coins?[indexPath.row] else { return }
+        guard let coin = viewModel?.coin.coins?[indexPath.row] else { return }
         let viewController = DetailInfoCoinViewController(coinUrl: (coin.icon ?? ""),
                                                           coinName: (coin.name ?? "No name"),
                                                           coinSymbol: (coin.symbol ?? "No symbol"),

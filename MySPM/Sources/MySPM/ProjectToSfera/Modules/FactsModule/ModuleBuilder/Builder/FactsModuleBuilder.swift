@@ -12,7 +12,7 @@ final class FactsModuleBuilder: FactModuleBuilderProtocol {
         let interactor = FactsInteractor()
         let router = FactsRouter()
         let presenter = FactsPresenter(interactor: interactor, router: router)
-        let viewController = FactsViewController()
+        let viewController = FactsViewController(presenter: presenter)
         presenter.view  = viewController
         viewController.presenter = presenter
         interactor.presenter = presenter

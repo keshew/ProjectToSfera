@@ -15,7 +15,11 @@ final class MarketPresenter: MarketPresenterProtocol {
     }
     
     func didLoadInfoAboutCoins(coin: Coin) {
-        view?.getInfoAboutCoins(coin: coin)
+        DispatchQueue.main.async {
+            self.view?.viewModel = CoinViewModel()
+            self.view?.viewModel?.coin = coin
+            self.view?.tableView.reloadData()
+        }
     }
     
     func viewDidLoaded() {

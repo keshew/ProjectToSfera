@@ -7,16 +7,16 @@
 
 import UIKit
 
-final class FactTableViewCell: UITableViewCell, FactTableViewCellProtocol {
+final class FactTableViewCell: UITableViewCell {
     
     static var identifier: String {
         String(describing: self)
     }
     
-    var stackView = UIStackView()
-    var descriptison = CLabel(numberOfLines: 0)
+    private var stackView = UIStackView()
+     var descriptison = CLabel(numberOfLines: 0)
     
-    var imageOfCoin: UIImageView = {
+     var imageOfCoin: UIImageView = {
         let image = UIImageView()
         image.clipsToBounds = true
         image.translatesAutoresizingMaskIntoConstraints = false
@@ -24,13 +24,13 @@ final class FactTableViewCell: UITableViewCell, FactTableViewCellProtocol {
         image.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         return image
     }()
-    var title: CLabel = {
+     var title: CLabel = {
         let label = CLabel(font: .systemFont(ofSize: 20, weight: .bold), numberOfLines: 0)
         label.setContentHuggingPriority(.defaultHigh, for: .vertical)
         return label
     }()
     
-    func configureStackView() {
+    private func configureStackView() {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.spacing = 10
@@ -58,7 +58,7 @@ final class FactTableViewCell: UITableViewCell, FactTableViewCellProtocol {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupView() {
+    private func setupView() {
         stackView = UIStackView(arrangedSubviews: [title,descriptison])
         addSubview(imageOfCoin)
         addSubview(stackView)

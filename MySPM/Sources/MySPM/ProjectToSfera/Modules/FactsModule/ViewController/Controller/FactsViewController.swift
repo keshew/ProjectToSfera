@@ -10,6 +10,15 @@ final class FactsViewController: UIViewController, FactsViewProtocol {
     var tableView = UITableView()
     var addItem: UIBarButtonItem?
     
+    init(presenter: FactsPresenterProtocol?) {
+        self.presenter = presenter
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
@@ -25,6 +34,7 @@ final class FactsViewController: UIViewController, FactsViewProtocol {
     }
     
     func configureTableView() {
+        tableView.allowsSelection = false
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .singleLine
